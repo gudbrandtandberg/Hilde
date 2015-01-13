@@ -1,0 +1,198 @@
+body {
+    /*background-color: #7f0000;*/
+    font-family: helvetica;
+    border-color: #330000;
+    margin: 0px;
+    min-width: 950px;
+    min-height: 650px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #330000;
+}
+
+/*     MENU - NAVBAR        */
+
+h1 {
+    font-size: 35px;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin-bottom: 10px; 
+}
+
+#banner {
+    padding-top: 1px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 200;
+}
+
+#menu {
+    height: 20px;
+    width: 650px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+#menu li a{
+    margin: 0 7px;
+    display: inline-block;
+    height: 20px;
+}
+
+#menu > li {
+    float: left;
+    height: 20px;
+    margin: 0;
+}
+
+#menu li:hover > a {
+    font-weight: 600;
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+    width: 98px;
+    left:371px;
+    z-index: 100;
+}
+
+#menu li:hover ul {
+    display: block;
+}
+
+#menu li ul li {
+    padding: 5px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#menu img {
+    display: inline;
+    width: 15px;
+    height: 15px;
+}
+
+
+/*      CONTENT        */
+
+#content {
+    width: 100%;
+    height: 84%;
+    margin: 0 auto;
+    border-top: solid 1px;
+    border-color: #330000;
+    overflow-y: scroll;
+}
+
+.innercontent {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.newsitem {
+    height: auto;
+}
+
+.newsitem img {
+    width: 500px;
+    height: auto;
+    margin: 0 100px;
+}
+
+/*    GALLERY STYLE  */
+
+#galleriknappbox {
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+}
+
+.galleriknapp {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 25px;
+    float: left;
+    position: relative;
+    
+}
+
+.galleriknapp img {
+    border: solid 1px;
+    margin: 9px;
+}
+
+/*      SECTION   */
+
+section {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+section p {
+    position: relative;
+    top: 250px;
+    margin: 0;
+}
+section img {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+#horses1 {
+     
+}
+
+#horses2 {
+     
+}
+
+#horses3 {
+    
+}
+
+h4 {
+    
+    
+    
+    
+}
+
+#dogs1 {
+    background-color: blue;   
+}
+
+#dogs2 {
+    background-color: green;   
+}
+
+#dogs3 {
+    background-color: aqua;   
+}
+
+
+#footer {
+    position: relative;
+    top: 10px;
+    text-align: center;  
+}
