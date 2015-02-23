@@ -1,4 +1,7 @@
 
+<?php
+    include("header.php");
+?>
 
 <div class="innercontent">
     
@@ -22,3 +25,7 @@
     </p>
 
 </div>
+
+<?php
+    include("footer.php");
+?>

@@ -1,3 +1,8 @@
+<?php
+    include("header.php");
+?>
+
+
 <div class="innercontent">
     
     <p>You can contact me by the following means:</p>
@@ -9,3 +14,7 @@
     
     
 </div>
+
+<?php
+    include("footer.php");
+?>

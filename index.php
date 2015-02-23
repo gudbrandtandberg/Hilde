@@ -1,77 +1,39 @@
+<!-- NEWSFEED/HOME -->
+
 <?php
-    if (isset($_GET["page"])){
-        $page = $_GET["page"];
-    }
-    else{
-        $page = "home";
-    }
-    
-    
+    include("header.php");
 ?>
 
-<html>
-<head>
-    <title>Hilde Morris Equestrial Artist</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"> </link>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    
-    <script type="text/javascript">
+<div class="innercontent">
+    <div class="newsitem">
         
-        $(document).ready(function(){
-
-            var page = <? echo '"'.$_GET['page'].'"'; ?>;
-            var currentMenuItem = document.getElementById(page);
-           
-            if ((page == "horses") || (page == "dogs")) {
-                currentMenuItem = document.getElementById("gallery");
-            }
-           
-           $(currentMenuItem).css("font-weight", "bold");
-
-        });
+        <h4>11.1.2015 - Jeg så et reinsdyr</h4>
         
-    </script>
-    
-    </head>
-
-<body>  
-    <div id="banner">
-
-        <h1>
-            HILDE MORRIS HORSE & DOG PORTRAITURE
-        </h1>
-
-    
-            <ul id="menu">
-                <li><a id="home" href="index.php?page=home">HOME</a> |</li> 
-                <li><a id="gallery" href="index.php?page=gallery">GALLERY</a> | 
-                    <ul id="popup">
-                        <li><a href="index.php?page=horses">HORSES</a></li>
-                        <li><a href="index.php?page=dogs">DOGS</a></li>
-                    </ul>
-                </li>
-                <li><a id="howdoesitwork" href="index.php?page=howdoesitwork">HOW DOES IT WORK?</a> |</li>
-                <li><a id="about" href="index.php?page=about">ABOUT THE ARTIST</a> |</li>
-                <li><a id="contact" href="index.php?page=contact">CONTACT</a></li>
-            </ul>
+        <p>
+            Se så fint reinsdyr jeg har malt denne uken!
+        </p>
         
-    
-    </div>
-    
-    </div>
-        
-    <div id="content">
-       <?php
-            include($page.".php");
-       ?>
+        <img src="images/fotter.jpg" alt="bilde">
+
     </div>
     
     
-    <!--<div id="footer">
-        &copy Duff Development 2015. All rights reserved.
-    </div>
--->
+    <div class="newsitem">
+        <h4>15.1.2015 - Ny utstilling!</h4>
+        <p>
+            Det var gøy på Oslo Open i år. Klikk <a href="#">her</a> for å se mine bidrag
+        </p>
 
-</body>
-</html>
+    </div>
+    
+    <div class="newsitem">
+        <h4>16.1.2015 - Bursdag</h4>
+        <p>I dag har jeg bursdag. Sen meg gaver til Nordahl Bruns gate 12.</p>
+  
+    </div> 
+</div>  <!-- end innercontent -->
+
+
+<?php
+    include("footer.php");
+?>

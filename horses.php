@@ -1,3 +1,7 @@
+<?php
+    include("header.php");
+?>
+
 <section id="horses1">
 
     <h4>Teddy</h4>
@@ -22,7 +26,9 @@
 
 <section id="horses3">
     <h4>Polly</h4>
-    
-    
-    
+
 </section>
+
+<?php
+    include("footer.php");
+?>
