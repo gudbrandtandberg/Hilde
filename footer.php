@@ -1,6 +1,6 @@
 
-        <div id="footer">
+        <!--<div id="footer">
                 &copy Duff Development 2015. All rights reserved.
-        </div>
+        </div>-->
     </body>
 </html>

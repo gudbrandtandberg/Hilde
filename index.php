@@ -13,7 +13,7 @@
             Se så fint reinsdyr jeg har malt denne uken!
         </p>
         
-        <img src="images/fotter.jpg" alt="bilde">
+        <img src="images/Sketches/fotter.jpg" alt="bilde">
 
     </div>
     

@@ -11,7 +11,7 @@
 	    var currentMenuItem = "home";
             $(currentMenuItem).css("font-weight", "bold");
            
-            $('#menu .enlinje').each(function(){
+            $('#menu .menuitem').each(function(){
 		wid = $(this).width() + 10;
 		$(this).css('width', wid+'px');
 	    });
@@ -33,19 +33,19 @@
         </h1>
 
             <ul id="menu">
-                <li class="enlinje"><a id="home" href="index.php">HOME</a></li>
+                <li class="menuitem"><a id="home" href="index.php">HOME</a></li>
                 <li class="strek">|</li>
-                <li class="enlinje"><a id="gallery" href="gallery.php">GALLERY</a> 
+                <li class="menuitem"><a id="gallery" href="gallery.php">GALLERY</a> 
                     <ul id="popup">
                         <li class="popupitem"><a href="horses.php">HORSES</a></li>
                         <li class="popupitem"><a href="dogs.php">DOGS</a></li>
                     </ul>
                 </li>
                 <li class="strek">|</li>
-                <li class="enlinje"><a id="howdoesitwork" href="howdoesitwork.php">THE PROCESS</a></li>
+                <li class="menuitem"><a id="process" href="process.php">PROCESS</a></li>
                 <li class="strek">|</li>
-                <li class="enlinje"><a id="about" href="about.php">ABOUT THE ARTIST</a></li>
+                <li class="menuitem"><a id="about" href="about.php">ABOUT THE ARTIST</a></li>
                 <li class="strek">|</li>
-                <li class="enlinje"><a id="contact" href="contact.php">CONTACT</a></li>
+                <li class="menuitem"><a id="contact" href="contact.php">CONTACT</a></li>
             </ul>
     </div>
