@@ -1,0 +1,9 @@
+-feeditems (array)
+  -item (object)
+    -date
+    -title
+    -text
+    -imagefile
+    -imagecaption
+  -item
+  -item

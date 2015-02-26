@@ -1,0 +1,8 @@
+-paintings (array size 3)
+  -horses (array)
+    -horse1 (object)
+      -filename
+      -text
+    -horse2 
+  -dogs
+  -other
