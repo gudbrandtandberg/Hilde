@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Hilde Morris Equestrian Artist</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"> </link>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> </link>
+    <link rel="stylesheet" href="style.css"></link>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     
     <script type="text/javascript">
@@ -35,10 +37,11 @@
             <ul id="menu">
                 <li class="menuitem"><a id="home" href="index.php">HOME</a></li>
                 <li class="strek">|</li>
-                <li class="menuitem"><a id="gallery" href="gallery.php">GALLERY</a> 
+                <li class="menuitem"><a id="gallery" href="gallerynav.php">GALLERY</a> 
                     <ul id="popup">
-                        <li class="popupitem"><a href="horses.php">HORSES</a></li>
-                        <li class="popupitem"><a href="dogs.php">DOGS</a></li>
+                        <li class="popupitem"><a href="gallery.php?page=horses">HORSES</a></li>
+                        <li class="popupitem"><a href="gallery.php?page=dogs">DOGS</a></li>
+			<li class="popupitem"><a href="gallery.php?page=other">OTHER</a></li>
                     </ul>
                 </li>
                 <li class="strek">|</li>
