@@ -4,7 +4,7 @@
     include("header.php");
 ?>
 
-<div class="innercontent">
+<div class="container">
     <div class="newsitem">
         
         <h4>11.1.2015 - Jeg så et reinsdyr</h4>
@@ -13,7 +13,7 @@
             Se så fint reinsdyr jeg har malt denne uken!
         </p>
         
-        <img src="images/Sketches/fotter.jpg" alt="bilde">
+        <img src="images/sketches/1.jpg" alt="bilde">
 
     </div>
     
@@ -28,7 +28,7 @@
     
     <div class="newsitem">
         <h4>16.1.2015 - Bursdag</h4>
-        <p>I dag har jeg bursdag. Sen meg gaver til Nordahl Bruns gate 12.</p>
+        <p>I dag har jeg bursdag. Send meg gaver til Nordahl Bruns gate 12.</p>
   
     </div> 
 </div>  <!-- end innercontent -->
