@@ -3,8 +3,9 @@
     include("header.php");
 ?>
 
-<div class="innercontent">
+<div class="container">
     
+    <h3>About Hilde Morris</h3>
     <ul>
         <li>CV</li>
         <li>Utstillinger</li>

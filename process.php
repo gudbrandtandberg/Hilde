@@ -2,7 +2,7 @@
     include("header.php");
 ?>
 
-<div class="innercontent">
+<div class="container">
     
     <p>
         Liten tekst hvor man introduserer arbeidsflyten. Bilder av stegene ved siden av punktene.

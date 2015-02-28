@@ -3,7 +3,8 @@
 <head>
     <title>Hilde Morris Equestrian Artist</title>
     <meta charset="UTF-8">
-    
+    <link rel="shortcut icon" href="images/diverse/ikon1.ico">
+	
     <!--JQuery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <!--Bootstrap JS-->
@@ -29,20 +30,22 @@
             HILDE MORRIS HORSE & DOG PORTRAITURE
         </h1>
 	<nav class="navbar navbar-default">
-	    <ul class="nav navbar-nav">
-		<li><a id="home" href="index.php">HOME</a></li>
-		<li class="dropdown">
-		    <a href="gallerynav.php">GALLERY</a> 
-		    <ul class="dropdown-menu" role="menu">
-			<li><a href="gallery.php?page=horses">HORSES</a></li>
-			<li><a href="gallery.php?page=dogs">DOGS</a></li>
-			<li><a href="gallery.php?page=other">OTHER</a></li>
-		    </ul>
-		</li>
-		<li><a href="process.php">PROCESS</a></li>
-		<li><a href="about.php">ABOUT THE ARTIST</a></li>
-		<li><a href="contact.php">CONTACT</a></li>
-	    </ul>
+	    <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+		    <li><a id="home" href="index.php">HOME</a></li>
+		    <li class="dropdown">
+			<a href="gallerynav.php">GALLERY</a> 
+			<ul class="dropdown-menu" role="menu">
+			    <li><a href="gallery.php?page=horses">HORSES</a></li>
+			    <li><a href="gallery.php?page=dogs">DOGS</a></li>
+			    <li><a href="gallery.php?page=other">OTHER</a></li>
+			</ul>
+		    </li>
+		    <li><a href="process.php">PROCESS</a></li>
+		    <li><a href="about.php">ABOUT THE ARTIST</a></li>
+		    <li><a href="contact.php">CONTACT</a></li>
+		</ul>
+	    </div>
 	</nav>
 
     </div>

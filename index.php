@@ -5,34 +5,46 @@
 ?>
 
 <div class="container">
-    <div class="newsitem">
+    <div class="row newscontainter">
         
-        <h4>11.1.2015 - Jeg så et reinsdyr</h4>
+        <div class="col-md-12 newsitem">
+            <h3>Dette er et news-item <small>Og dette er en dato</small></h3>
+            <p>
+                Et news-item MÅ ha en tittel og en tekst. Dato blir automatisk generert. Et newsitem KAN ha et bilde og bildet KAN ha en tekst. Du legger ganske enkelt nye news-items inn ved å gå <a href="nynewsfeed.php">hit</a> og følge instruksene.
+                På den andre side - hvis du vil legge inn et nytt bilde til galleriet, så gjør du det <a href="nyttbilde.php">her</a>.
+            </p>
+        </div>
         
-        <p>
-            Se så fint reinsdyr jeg har malt denne uken!
-        </p>
+        <div class="col-md-12 newsitem">
+            
+            <h3>Jeg så et reinsdyr <small>11.1.2015</small></h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            
+            <div>
+                <img src="images/other/11.jpg" alt="bilde">
+                <p>Liten kommentar til bildet...</p>
+            </div>
+        </div>
         
-        <img src="images/sketches/1.jpg" alt="bilde">
-
+        
+        <div class="col-md-12 newsitem">
+            <h3>Ny utstilling! <small>7.1.2015</small></h3>
+            <p>
+                Det var gøy på Oslo Open i år. Klikk <a href="#">her</a> for å se mine bidrag. Det blir veldig spennende, og jeg håper jeg vinner masse premier! Hvis jeg gjør det så skal jeg kjøpe masse gaver til alle mine fettere som er så utrolig snille og søte (ikke Eirik og Magnus da...)
+            </p>
+    
+        </div>
+        
+        <div class="col-md-12 newsitem">
+            <h3>Jeg har bursdag! <small>1.1.2015</small></h3>
+            <p>I dag har jeg bursdag. Send meg gaver til Nordahl Bruns gate 12.</p>
+      
+        </div>
+        
     </div>
-    
-    
-    <div class="newsitem">
-        <h4>15.1.2015 - Ny utstilling!</h4>
-        <p>
-            Det var gøy på Oslo Open i år. Klikk <a href="#">her</a> for å se mine bidrag
-        </p>
-
-    </div>
-    
-    <div class="newsitem">
-        <h4>16.1.2015 - Bursdag</h4>
-        <p>I dag har jeg bursdag. Send meg gaver til Nordahl Bruns gate 12.</p>
-  
-    </div> 
-</div>  <!-- end innercontent -->
-
+</div>
 
 <?php
     include("footer.php");

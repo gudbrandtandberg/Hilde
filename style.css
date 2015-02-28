@@ -7,27 +7,37 @@ body {
     min-width: 950px;
     min-height: 650px;
 }
-
 a {
     text-decoration: none;
     color: #330000;
 }
+a:hover {
+    text-decoration: none;
+    color: #330000;
+    font-weight: 400;
+}
 
-/*  HEADER STYLING   */
+/*  HEADER & NAVBAR STYLING   */
 
 h1 {
     font-size: 35px;
-    font-family: "Lucida Console", Monaco, monospace;
+    /*font-family: "Lucida Console", Monaco, monospace;*/
     margin-bottom: 10px;
     text-align: center;
 }
-
 .navbar-default {
     background-color: #ffffff;
     border-top: none;
     border-color: #E7E7E7;
 }
-
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -35,17 +45,37 @@ h1 {
     display: none;
 }
 
+/*  NEWSFEED STYLING  */
 
-/*  CONTENT STYLING  */
-
-.newsitem {
-    height: auto;
+.newscontainter {
+    text-align: center;
 }
-
+.newsitem {
+    
+}
+.newsitem > h3 {
+    text-align: left;
+}
 .newsitem img {
     width: 500px;
     height: auto;
-    margin: 0 100px;
+    margin: 0 auto;
+    border: solid 1px black;
+}
+.newsitem > p {
+    text-align: left;
+}
+
+/* GALLERYNAV STYLING */
+.gallerynavbutton {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+}
+.gallerynavbutton img {
+    width: 250px;
+    height: 250px;
+    border: solid 1px;
 }
 
 /* GALLERY STYLING  */
@@ -53,27 +83,4 @@ h1 {
 #gallericontainer {
     margin-top: 10px;
 }
-#galleriknappbox {
-    margin: auto;
-    width: 800px;
-    height: 500px;
-    position: relative;
-    top: 50px;
-}
 
-.galleriknapp {
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 200;
-    margin: 25px;
-    float: left;
-    position: relative;
-    
-}
-
-.galleriknapp img {
-    border: solid 1px;
-    margin: 9px;
-}
