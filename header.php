@@ -24,7 +24,7 @@
     </script>
 </head>
 
-<body>  
+<body>
     <div id="header">
         <h1>
             HILDE MORRIS HORSE & DOG PORTRAITURE

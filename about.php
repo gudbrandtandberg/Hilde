@@ -9,6 +9,7 @@
     <ul>
         <li>CV</li>
         <li>Utstillinger</li>
+        <li>Bilde av Hilde som maler</li>
     </ul>
     
     <p>

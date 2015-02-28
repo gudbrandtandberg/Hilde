@@ -1,3 +1,11 @@
+<!-- Generelle tips:
+-Offer approval, return and refund policies
+-Provide clear concise instructions on how to buy
+-Provide adequate contact information
+-Think seriously about accompanying each series or body of your work with its own explanation or introduction.
+-Text explanations and introductions to your art are extremely important, but keep the word count to a minimum.
+-->
+
 <!-- NEWSFEED/HOME -->
 
 <?php

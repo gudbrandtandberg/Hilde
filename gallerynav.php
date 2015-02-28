@@ -2,7 +2,7 @@
     include("header.php");
 ?>
 
-<div class="container">
+<div class="container gallerynavcontainter">
     <div class="row">
         
         <a href="gallery.php?page=horses" class="gallerynavbutton">
