@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
 
         <!--JQuery-->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
         <!--Bootstrap JS-->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
         <!--Bootstrap CSS-->
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         
@@ -15,13 +15,18 @@
                 padding: 10px;
             }
         </style>
+        
+        <!-- Inni her skjer magien  -->
+        <script type="text/javascript" src="scripts/JIC.js"></script>
+        <script type="text/javascript" src="scripts/posthandlers.js"></script>
     </head>
+    
     <body>
         <div class="container">
     
             <h2>Legg inn ny newsitem</h2>
         
-            <form action="scripts/lagreFeed.php" method="POST" id="legginnform" enctype="multipart/form-data">
+            <form id="legginnform" enctype="multipart/form-data" onsubmit="return handleNyFeed();">
                 <table>
                     <tr>
                         <td>Tittel: </td>

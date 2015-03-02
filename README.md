@@ -3,10 +3,6 @@
 I dette dokumentet forklares filosofien og strukturen til siden hildemorris.com
 laget av Duff Development 2015. 
 
-hildemorris.com er hjemmesiden til kunstneren Hilde Morris som maler portretter
-av hunder og hester. Målet til siden er å formidle all nødvendig informasjon
-om Hildes arbeidsmetode til potensielle kunder, og å vise frem alle maleriene. 
-
 ## Contents
 
   - about.php, contact.php, process.php, gallery.php: simple pages with static
@@ -32,16 +28,3 @@ var paintings = json_decode(paintings.json);
 
 paintings.horses[i].src
 paintings.horses[i].text
-
----------------------------------
-horses.php
-
-- output grid of images with php
-
-<script>
-- bootstrap the grid
-- handle onclick() event and display imageviewer (also bootstrap?)
-- lazy load rest of images
-<script>
-
----------------------------------

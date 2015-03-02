@@ -6,7 +6,7 @@
         <!--JQuery-->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <!--Bootstrap JS-->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
         <!--Bootstrap CSS-->
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         
@@ -15,13 +15,19 @@
                 padding: 10px;
             }
         </style>
+        
+        <!-- Inni her skjer magien  -->
+        <script type="text/javascript" src="scripts/JIC.js"></script>
+        <script type="text/javascript" src="scripts/posthandlers.js"></script>
+    
     </head>
+    
     <body>
         <div class="container">
     
             <h2>Legg inn nytt bilde</h2>
         
-            <form action="scripts/lagreBilde.php" method="POST" id="legginnform" enctype="multipart/form-data">
+            <form id="legginnform" enctype="multipart/form-data" onsubmit="return handleNyttBilde(this);">
                 <table>
                     <tr>
                         <td>Velg bilde: </td>
@@ -34,7 +40,7 @@
                     <tr>
                         <td>Kategori: </td>
                         <td>
-                            <select form="legginnform" name="category">
+                            <select form="legginnform" name="kategori">
                                 <option>horses</option>
                                 <option>dogs</option>
                                 <option>other</option>
@@ -42,7 +48,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="submit" name="submit" value="Lagre bilde"></td>
+                        <td colspan="2"><input type="submit" id="submitbutton" name="submit" value="Lagre bilde"></td>
                     </tr>
                 </table>
             </form>

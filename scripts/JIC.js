@@ -8,8 +8,6 @@
  * Date: Sat Mar 24 15:11:03 2012 -0200
  */
 
-
-
 /**
  * Create the jic object.
  * @constructor
