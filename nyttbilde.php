@@ -14,6 +14,12 @@
             td {
                 padding: 10px;
             }
+            #source_image {
+                border: solid black 2px;
+                width: 350px;
+                padding: 10px;
+                height: 350px;
+            }
         </style>
         
         <!-- Inni her skjer magien  -->
@@ -27,20 +33,20 @@
     
             <h2>Legg inn nytt bilde</h2>
         
-            <form id="legginnform" enctype="multipart/form-data" onsubmit="return handleNyttBilde(this);">
+            <form id="legginnform" action="scripts/lagrebilde.php" onsubmit="return handleNyttBilde(this);">
                 <table>
                     <tr>
                         <td>Velg bilde: </td>
-                        <td><input type="file" name="bildefil" id="bildefil" accept="image/*"></td>
+                        <td><input type="file" name="bildefil" id="bildefil" accept="image/*" onchange="openFile(event)"></td>
                     </tr>
                     <tr>
                         <td>Bildetekst: </td>
-                        <td><textarea cols="80" rows="1" form="legginnform" name="bildetekst"></textarea></td>
+                        <td><textarea cols="80" rows="1" form="legginnform" name="bildetekst" id="bildetekst"></textarea></td>
                     </tr>
                     <tr>
                         <td>Kategori: </td>
                         <td>
-                            <select form="legginnform" name="kategori">
+                            <select form="legginnform" name="kategori" id="kategori">
                                 <option>horses</option>
                                 <option>dogs</option>
                                 <option>other</option>
@@ -48,11 +54,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="submit" id="submitbutton" name="submit" value="Lagre bilde"></td>
+                        <td><input type="submit" id="submitbutton" name="submit" value="Lagre bilde"></td>
+                        <td><div id="spinner" style="visibility: hidden;"><img src="images/diverse/spinner.gif"</div></td>
                     </tr>
                 </table>
             </form>
-
+            
+            <!-- Må ha img-elementer tilgjengelig for mellomlagring under kompresjon -->
+            <div class="container">
+                <img id="source_image">
+                <p id="statustekst">
+                    Du har ikke valgt et bilde ennå.
+                </p>
+            </div>
+            
+            <!--vises ikke-->
+            <img id="result_image" style="display: none;">  
         </div>
     </body>
 </html>

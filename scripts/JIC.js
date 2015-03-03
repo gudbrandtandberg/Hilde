@@ -54,7 +54,6 @@ var jic = {
 
         upload: function(compressed_img_obj, upload_url, file_input_name, filename, successCallback, errorCallback, duringCallback, customHeaders){
 
-
             var cvs = document.createElement('canvas');
             cvs.width = compressed_img_obj.naturalWidth;
             cvs.height = compressed_img_obj.naturalHeight;
@@ -80,9 +79,11 @@ var jic = {
             
             var xhr = new XMLHttpRequest();
             xhr.open('POST', upload_url, true);
+	    
             var boundary = 'someboundary';
 
             xhr.setRequestHeader('Content-Type', 'multipart/form-data; boundary=' + boundary);
+
 		
 		// Set custom request headers if customHeaders parameter is provided
 		if (customHeaders && typeof customHeaders === "object") {
@@ -97,11 +98,18 @@ var jic = {
 				if (evt.lengthComputable) {  
 					return (evt.loaded / evt.total)*100;  
 				}
+				return 0;
 			};
 		}
 		
-            xhr.sendAsBinary(['--' + boundary, 'Content-Disposition: form-data; name="' + file_input_name + '"; filename="' + filename + '"', 'Content-Type: ' + type, '', atob(data), '--' + boundary + '--'].join('\r\n'));
-            
+            xhr.sendAsBinary(['--' + boundary,
+			      'Content-Disposition: form-data; name="' + file_input_name + '"; filename="' + filename + '"'
+			      + 'kategori="kategori"',
+			      'Content-Type: ' + type, '',
+			      atob(data),
+			      '--' + boundary + '--'].join('\r\n'));
+	    
+	    
             xhr.onreadystatechange = function() {
 			if (this.readyState == 4){
 				if (this.status == 200) {
@@ -113,6 +121,7 @@ var jic = {
 				}
 			}
             };
+
 
 
         }

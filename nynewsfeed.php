@@ -53,6 +53,10 @@
                     </tr>
                 </table>    
             </form>
+
+            <!-- Må ha img-elementer tilgjengelig for mellomlagring under kompresjon -->
+            <img id="source_image">
+            <img id="result_image">
             
         </div>
     </body>

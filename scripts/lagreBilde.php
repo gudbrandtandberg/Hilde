@@ -8,19 +8,26 @@
  */
 
     require("filehandler.php");
+    ini_set("display_errors", 0);
     
-    print_r($_POST);
-    echo "\n";
-    print_r($_FILES);
+    $bildefil = $_FILES["bildefil"];
+    sleep(3);
     
-    $category = $_POST["kategori"];
+    //henter form-data
+    $category = $_GET["kategori"];
+    $tekst = $_GET["bildetekst"];
     
-    $target_dir = "/Users/gudbrand/Documents/html/Hilde/images/".$category."/";
+    //forbereder target filnavn
+    $target_dir = "../images/".$category."/";
     $numImInDir = count(scandir($target_dir))-2;
-    $target_filename = $target_dir.$numImInDir.".jpg"; //HER MÅ MAN GENERERE NAVN BASERT PÅ ANTALL BILDER
-    
-    //saveImage($_FILES, $target_filename);
+    $target_filename = $target_dir.$numImInDir.".jpg"; 
     
     //OG SÅ OPPDATERE JSON, DVS. PAINTINGS.JSON MÅ FÅ ET NYTT ELEMENT MED TEKSTEN (KANSKJE BARE DET?)
-
+    
+    
+    //prøve å lagre bildet
+    if  (saveImage($bildefil, $target_filename)){
+        echo "YES";
+    }
+    
 ?>
