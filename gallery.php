@@ -4,6 +4,9 @@
     $numPaintings = count($paintings)-2;  //scandir lister opp . og .. også
     $numRows = $numPaintings/4;
 ?>
+<?php
+    include("header.php");
+?>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -20,10 +23,6 @@
     });
 </script>
 
-<?php
-    include("header.php");
-?>
-
 <div class="container-fluid" id="gallericontainer">
     
     <?php for ($r = 0; $r < $numRows; $r++): ?>
@@ -35,7 +34,7 @@
         ?>
         <div class="col-xs-6 col-md-3">
             <div class="thumbnail">
-                <img src="images/<?=$page;?>/<?=$imNum;?>.jpg" alt="bilde">
+                <img class="img-responsive" src="images/<?=$page;?>/<?=$imNum;?>.jpg" alt="bilde">
             </div>
         </div>
         <?php endif; ?>

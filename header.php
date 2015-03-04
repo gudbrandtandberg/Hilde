@@ -3,6 +3,7 @@
 <head>
     <title>Hilde Morris Equestrian Artist</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/diverse/ikon1.ico">
 	
     <!--JQuery-->
@@ -25,12 +26,18 @@
 </head>
 
 <body>
+    <div id="wrapper">
     <div id="header">
         <h1>
             HILDE MORRIS HORSE & DOG PORTRAITURE
         </h1>
 	<nav class="navbar navbar-default">
-	    <div class="collapse navbar-collapse">
+	    <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#toToggle">
+		    <span>Show menu</span>
+		</button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="toToggle">
 		<ul class="nav navbar-nav">
 		    <li><a id="home" href="index.php">HOME</a></li>
 		    <li class="dropdown">

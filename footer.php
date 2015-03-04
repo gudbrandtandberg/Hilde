@@ -1,4 +1,5 @@
 
+        </div><!--end wrapper-->
         
         <footer class="footer">
           <div class="container">
