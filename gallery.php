@@ -2,7 +2,6 @@
     $page = $_GET["page"];
     $paintings = scandir("images/".$page);
     $numPaintings = count($paintings)-2;  //scandir lister opp . og .. også
-    $numRows = $numPaintings/4;
 ?>
 <?php
     include("header.php");
@@ -35,7 +34,7 @@
                         <i class="glyphicon glyphicon-chevron-left"></i>
                         Previous
                     </button>
-                    <button type="button" class="btn btn-primary next">
+                    <button type="button" class="btn btn-default next">
                         Next
                         <i class="glyphicon glyphicon-chevron-right"></i>
                     </button>
@@ -48,22 +47,12 @@
 <!-- Dette er gridet -->
 
 <div class="container-fluid" id="gallericontainer">
-    <?php for ($r = 0; $r < $numRows; $r++): ?>
-    <div class="row">
-        <?php for ($c = 0; $c < 4; $c++): ?>
-        <?php
-            $imNum = 1 + 4*$r +$c;
-            if (!($imNum >= $numPaintings)):
-        ?>
+    <?php for ($imNum = 1; $imNum < $numPaintings; $imNum++): ?>
         <div class="col-xs-6 col-md-3">
             <a href="images/<?=$page;?>/<?=$imNum;?>.jpg" class="thumbnail" data-gallery>
-                <img class="img-responsive" src="images/<?=$page;?>/<?=$imNum;?>.jpg" alt="bilde">
+                <div class="tommelbildebeholder" style="background-image: url('images/<?=$page;?>/<?=$imNum;?>.jpg');"></div>
             </a>
         </div>
-        <?php endif; ?>
-        <?php endfor; ?>
-        
-    </div>
     <?php endfor; ?>
     
 </div>

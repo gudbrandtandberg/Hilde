@@ -15,7 +15,6 @@
     <!--Style.css-->
     <link rel="stylesheet" href="style.css"></link>
     
-    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="bootstrap_image_gallery/css/bootstrap-image-gallery.min.css">
     
