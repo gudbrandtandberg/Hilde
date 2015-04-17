@@ -26,7 +26,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
+                    <h4 class="modal-title">hei</h4>
                 </div>
                 <div class="modal-body next"></div>
                 <div class="modal-footer">

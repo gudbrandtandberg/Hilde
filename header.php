@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hilde Morris Equestrian Artist</title>
+    <title>Hilde Morris Portraiture</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/diverse/ikon1.ico">

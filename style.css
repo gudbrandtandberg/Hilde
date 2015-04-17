@@ -87,6 +87,16 @@ ul.dropdown-menu {
 
 /*  NEWSFEED STYLING  */
 
+#reintabell {
+    table-layout: fixed;
+    
+}
+
+#reintabell td {
+    width: 50%;
+    padding: 10px 0px;
+}
+
 .newscontainter {
     text-align: center;
 }
