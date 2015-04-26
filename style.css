@@ -76,7 +76,9 @@ ul.dropdown-menu {
     min-width: 110px;
 
 }
-
+ul.dropdown-menu > li {
+    width: 100%;
+}
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 
@@ -114,25 +116,24 @@ ul.dropdown-menu {
 }
 
 /* GALLERYNAV STYLING */
-.gallerynavcontainter {
+.gallerynavcontainer {
     padding-top: 30px;
 }
 .gallerynavbutton {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 200;
 }
-.gallerynavbutton img {
-    width: 290px;
-    height: 290px;
-    border: solid 1px;
+.gallerynavimage {
+    width: 100%;
+    padding-top:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+    border: solid 1px black;
 }
-.gallerynavbutton p {
-    margin-top: 2px;
-}
-.gallerynavbutton:hover p {
-    font-weight: 200;
-}
+
 /* GALLERY STYLING  */
 
 #gallericontainer {

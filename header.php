@@ -35,27 +35,21 @@
             HILDE MORRIS HORSE & DOG PORTRAITURE
         </h1>
 	<nav class="navbar navbar-default">
-	    <div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#toToggle">
-		    <span>Show menu</span>
-		</button>
-	    </div>
-	    <div class="collapse navbar-collapse" id="toToggle">
-		<ul class="nav navbar-nav">
-		    <li><a id="home" href="index.php">HOME</a></li>
-		    <li class="dropdown">
-			<a href="gallerynav.php">GALLERY</a> 
-			<ul class="dropdown-menu" role="menu">
-			    <li><a href="gallery.php?page=horses">HORSES</a></li>
-			    <li><a href="gallery.php?page=dogs">DOGS</a></li>
-			    <li><a href="gallery.php?page=other">OTHER</a></li>
-			</ul>
-		    </li>
-		    <li><a href="process.php">PROCESS</a></li>
-		    <li><a href="about.php">ABOUT THE ARTIST</a></li>
-		    <li><a href="contact.php">CONTACT</a></li>
-		</ul>
-	    </div>
+	    <div class="navbar-header"></div>
+	    <ul class="nav navbar-nav">
+		<li><a id="home" href="index.php">HOME</a></li>
+		<li class="dropdown">
+		    <a href="gallerynav.php">GALLERY</a> 
+		    <ul class="dropdown-menu" role="menu">
+			<li><a href="gallery.php?page=horses">HORSES</a></li>
+			<li><a href="gallery.php?page=dogs">DOGS</a></li>
+			<li><a href="gallery.php?page=other">OTHER</a></li>
+		    </ul>
+		</li>
+		<li><a href="process.php">PROCESS</a></li>
+		<li><a href="about.php">ABOUT THE ARTIST</a></li>
+		<li><a href="contact.php">CONTACT</a></li>
+	    </ul>
 	</nav>
 
     </div>

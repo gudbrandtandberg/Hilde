@@ -16,36 +16,39 @@
     <div class="row newscontainter">
         
         <div class="col-md-12 newsitem">
-            <h3>Velkommen til hildemorris.com! <small>1.5.2015</small></h3>
-            
+            <h3>Welcome to hildemorris.com! <small>1.5.2015</small></h3>
             
         </div>
         
         <div class="col-md-12 newsitem">
-            <h3>Reinens vei fra vidde til frysedisk <small>17.4.2015</small></h3>
+            <h3>Oslo Open <small>18.4.2015</small></h3>
             
-            <p>Vises i Oslo Open 2015</p>
+            <p>
+                Oslo Open is an art festival where artists in Oslo open their studios to the public. This year more than 350 artists participated, including me!
+                I focused mainly on presenting my recent series of paintings from Sami reindeer herding and reindeer slaughter at a small local abattoir in Suossjavri in Finnmark.
+                There were many visitors, and Oslo Open was a great opportunity to show this project, which I have been working on since 2013.
+            </p>
             
             <table id="reintabell">
                 <tr>
-                    <td><img src="images/news/Skillegjerdemed utsikt.jpg"></td>
-                    <td><img src="images/news/gutten og reinen_skillegjerde.jpg"></td>
+                    <td><a href="images/news/Skillegjerdemedutsikt.jpg"><img src="images/news/Skillegjerdemedutsikt.jpg"></a></td>
+                    <td><a href="images/news/guttenogreinen_skillegjerde.jpg"><img src="images/news/guttenogreinen_skillegjerde.jpg"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="images/news/dødigjerdet_lores.jpg"></td>
-                    <td><img src="images/news/avblødning.jpg"></td>
+                    <td><a href="images/news/doedigjerdet_lores.jpg"><img src="images/news/doedigjerdet_lores.jpg"></a></td>
+                    <td><a href="images/news/avbloedning.jpg"><img src="images/news/avbloedning.jpg"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="images/news/Minus30 utenfor.jpg"></td>
-                    <td><img src="images/news/ned på benken.jpg"></td>
+                    <td><a href="images/news/Minus30utenfor.jpg"><img src="images/news/Minus30utenfor.jpg"></a></td>
+                    <td><a href="images/news/nedpaabenken.jpg"><img src="images/news/nedpaabenken.jpg"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="images/news/ut av skinnet.jpg"></td>
-                    <td><img src="images/news/utvomming.jpg"></td>
+                    <td><a href="images/news/utavskinnet.jpg"><img src="images/news/utavskinnet.jpg"></a></td>
+                    <td><a href="images/news/utvomming.jpg"><img src="images/news/utvomming.jpg"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="images/news/rensing.jpg"></td>
-                    <td><img src="images/news/Til Himmels.jpg"></td>
+                    <td><a href="images/news/rensing.jpg"><img src="images/news/rensing.jpg"></a></td>
+                    <td><a href="images/news/TilHimmels.jpg"><img src="images/news/TilHimmels.jpg"></a></td>
                 </tr>
             </table>
             
