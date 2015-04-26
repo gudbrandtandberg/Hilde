@@ -1,7 +1,7 @@
 <?php
     $page = $_GET["page"];
     $paintings = scandir("images/".$page);
-    $numPaintings = count($paintings)-2;  //scandir lister opp . og .. også
+    $numPaintings = count($paintings)-1;  //scandir lister opp . og .. også
 ?>
 <?php
     include("header.php");

@@ -41,8 +41,8 @@
 		<li class="dropdown">
 		    <a href="gallerynav.php">GALLERY</a> 
 		    <ul class="dropdown-menu" role="menu">
-			<li><a href="gallery.php?page=horses">HORSES</a></li>
-			<li><a href="gallery.php?page=dogs">DOGS</a></li>
+			<li><a href="gallery.php?page=Horses">HORSES</a></li>
+			<li><a href="gallery.php?page=Dogs">DOGS</a></li>
 			<li><a href="gallery.php?page=other">OTHER</a></li>
 		    </ul>
 		</li>
