@@ -4,7 +4,7 @@
 
 <div class="container">
 
-    <div class="col-md-6">
+    <div class="col-md-12">
     <h3>The Portrait Process</h3>
     <p>
 The goal of each project is to deliver a personal portrait that embodies the spirit of the animal. I wish to start the project by talking to the owner about their horse or dog. Anecdotes from funny episodes or just everyday life with their animal companion are important in order to understand the animal’s character, and the dynamic between owner and dog/horse. Is this a cuddly pet, a serious work partner, a sporting companion, a combination, or something totally different?
