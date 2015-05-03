@@ -4,6 +4,21 @@ a {
     text-decoration: none;
     color: #330000;
 }
+p {
+    font-size: larger;
+}
+.prosessbilde {
+    margin-top: 10px;
+}
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    background-color:#C0C0C0;
+    border: 1px solid black;
+    padding: 5px;
+    width: 200px;
+    font-size: smaller;
+}
 a:hover {
     text-decoration: none;
     color: #330000;
@@ -87,16 +102,33 @@ ul.dropdown-menu > li {
     display: none;
 }
 
+/*  HJEM STYLING   */
+
+.karusellbilde {
+    border: inset 10px grey;
+    width: 100%;
+    height: 420px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.velkomsttekst {
+    font-size: larger;
+}
+
+
 /*  NEWSFEED STYLING  */
 
 #reintabell {
     table-layout: fixed;
-    
 }
 
 #reintabell td {
     width: 50%;
     padding: 10px 0px;
+}
+#reintabell img {
+    width: 95%;
 }
 
 .newscontainter {
@@ -135,6 +167,17 @@ ul.dropdown-menu > li {
 }
 
 /* GALLERY STYLING  */
+
+.blueimp-gallery > .description {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  color: #fff;
+  display: none;
+}
+.blueimp-gallery-controls > .description {
+  display: block;
+}
 
 #gallericontainer {
     margin-top: 10px;

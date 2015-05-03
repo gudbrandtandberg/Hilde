@@ -8,6 +8,8 @@
 	
     <!--JQuery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <!--Bootstrap JS-->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!--Bootstrap CSS-->

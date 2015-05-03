@@ -1,8 +1,4 @@
--paintings (array size 3)
-  -horses (array)
-    -horse1 (object)
-      -filename
-      -text
-    -horse2 
-  -dogs
-  -other
+{"horses": [["1.jpg", "Hest 1"], ["2.jpg", "Hest 2"], ["3.jpg", "Hest 3"], ["4.jpg", "Hest 4"]], 
+"dogs": [["1.jpg", ""], ["2.jpg", ""], ["3.jpg", ""], ["4.jpg", ""], ["5.jpg", ""], ["6.jpg", ""], ["7.jpg", ""], ["8.jpg", ""], ["9.jpg", ""], ["10.jpg", ""], ["11.jpg", ""], ["12.jpg", ""], ["13.jpg", ""], ["14.jpg", ""]], 
+"other": [["1.jpg", "Reindeer Calf (30x40cm)"], ["2.jpg", "Noe"], ["3.jpg", ""], ["4.jpg", ""], ["5.jpg", ""], ["6.jpg", ""], ["7.jpg", ""], ["8.jpg", ""], ["9.jpg", ""], ["10.jpg", ""], ["11.jpg", ""], ["12.jpg", ""], ["13.jpg", ""], ["14.jpg", ""], ["15.jpg", ""], ["16.jpg", ""]],
+"homepage": ["dogs/1.jpg", "dogs/6.jpg", "dogs/11.jpg", "dogs/12.jpg", "dogs/14.jpg", "horses/3.jpg", "horses/4.jpg", "other/1.jpg", "other/3.jpg"]}

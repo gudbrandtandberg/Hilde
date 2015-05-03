@@ -10,14 +10,14 @@
     }
     .quitebig{
         font-size: 20px;
-        padding: 60px 20px;
+        padding: 60px 15%;
     }
 </style>
 
 <div class="container">
     
     <p class="quitebig" style="text-align: center;">
-        Please contact me if you have any questions. 
+        If you are interested in buying a painting, commissioning a portrait of your pet, or if you have any other questions, please contact me at:
     </p>
     <table class="big">
         <tr>
