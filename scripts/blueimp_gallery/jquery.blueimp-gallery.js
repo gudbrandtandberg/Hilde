@@ -64,6 +64,7 @@ var visible = false;
                     var text = this.list[index].getAttribute('data-description'),
                     node = container.find('.modal-description');
                     node.empty();
+                    
                     if (text) {
                         node[index].appendChild(document.createTextNode(text));
                     }

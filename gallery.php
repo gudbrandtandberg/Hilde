@@ -18,7 +18,6 @@
     <div class="slides"></div>
     <!-- Controls for the borderless lightbox -->
     <h3 class="title"></h3>
-    <p class="description"></p>
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>

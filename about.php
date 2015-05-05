@@ -14,7 +14,7 @@
             to portray animals truthfully, playfully and with high artistic quality.
         </p>
         
-        <img style="margin: 0 auto; display: block;" src="http://image.shutterstock.com/display_pic_with_logo/265489/123841357/stock-vector-cartoon-artist-girl-vector-clip-art-illustration-with-simple-gradients-all-in-a-single-layer-123841357.jpg" width="200px"/>
+        <img style="margin: 0 auto; display: block; border: inset 10px grey;" src="images/diverse/hilde.jpg" width="80%"/>
     </div>
 
     <div class="col-md-6">
