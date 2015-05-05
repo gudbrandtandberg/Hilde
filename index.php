@@ -6,8 +6,6 @@
 -Text explanations and introductions to your art are extremely important, but keep the word count to a minimum.
 -->
 
-<!-- NEWSFEED/HOME -->
-
 <?php
     include("header.php");
 ?>
@@ -23,6 +21,8 @@
         });
     });
 </script>
+
+<!-- HOME -->
 
 <div class="container">
     
@@ -66,10 +66,9 @@ Sunshine in my Soul.ttf&size=40&style_color=000000" alt="Handwriting Fonts">
         
     </div>
     
-    
 </div>
 
-<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="scripts/slick/slick.min.js"></script>
 				
 <?php
     include("footer.php");

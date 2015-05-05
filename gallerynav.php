@@ -4,7 +4,6 @@
 
 <div class="container gallerynavcontainer">
     
-        
         <div class="col-sm-4">
             <a href="gallery.php?page=horses" class="gallerynavbutton">
                 <div class="gallerynavimage" style="background-image: url('images/horses/1.jpg');" alt="Horses"></div>
@@ -26,7 +25,6 @@
             </a>
         </div>
         
-    
 </div>
 
 <?php

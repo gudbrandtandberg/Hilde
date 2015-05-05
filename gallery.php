@@ -18,6 +18,7 @@
     <div class="slides"></div>
     <!-- Controls for the borderless lightbox -->
     <h3 class="title"></h3>
+    <p class="description"></p>
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>
@@ -37,7 +38,7 @@
                         <i class="glyphicon glyphicon-chevron-left"></i>
                         Previous
                     </button>
-                    <p class="description"></p>
+                    <p class="modal-description"></p>
                     <button type="button" class="btn btn-default next">
                         Next
                         <i class="glyphicon glyphicon-chevron-right"></i>
@@ -54,58 +55,45 @@
     <div class="col">
         <p>Click on the images below to see them in full format</p>
     </div>
-    <div class="links">
+    <div id="links">
     <?php for ($imNum = 0; $imNum < $numPaintings-1; $imNum++):
         $file = $file_title[$imNum][0];
         $title = $file_title[$imNum][1];
+        $subtitle = $file_title[$imNum][2];
     ?>
-        <a>
         <div class="col-xs-6 col-md-3">
-            <a href="images/<?=$page;?>/<?=$file;?>" class="thumbnail" data-gallery title="<?=$title;?>" data-description="This is a banana.">
+            <a href="images/<?=$page;?>/<?=$file;?>" class="thumbnail" data-gallery title="<?=$title;?>" data-description="<?=$subtitle;?>">
                 <div class="tommelbildebeholder" style="background-image: url('images/<?=$page;?>/<?=$file;?>');"></div>
             </a>
         </div>
-        </a>
     <?php endfor; ?>
     </div>
-    
-    
 </div>
 
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="bootstrap_image_gallery/js/bootstrap-image-gallery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
-    blueimp.Gallery(
-        document.getElementById('links'),
-        {
-            onslide: function (index, slide) {
-                var text = this.list[index].getAttribute('data-description'),
-                    node = this.container.find('.description');
-                node.empty();
-                if (text) {
-                    node[0].appendChild(document.createTextNode(text));
-                }
+    //håndter høyreklikk på gallerithumbnailsiden
+    var visible = false;
+    $(document).ready(function(){
+        var visible = false;
+        $(".tommelbildebeholder, div.modal-body.next").bind("contextmenu", customContext);
+        $(document).bind("click", function(event) {
+            visible = false;
+            $("div.custom-menu").hide();
+        });
+
+        function customContext(event){
+            event.preventDefault();
+            if (!visible) {
+                visible = true;
+                $("<div class='custom-menu'>These photos are copyrighted by Hilde Morris. All rights reserved. Unauthorized use prohibited.</div>")
+                .appendTo("body").css({top: event.pageY + "px", left: event.pageX + "px"});
             }
         }
-    );
-    
-    // håndter høyreklikk her
-    var visible = false;
-    $(".tommelbildebeholder, div.modal-body.next").bind("contextmenu", function(event) {
-        event.preventDefault();
-        if (!visible) {
-            visible = true;
-            $("<div class='custom-menu'>These photos are copyrighted by Hilde Morris. All rights reserved. Unauthorized use prohibited.</div>")
-            .appendTo("body").css({top: event.pageY + "px", left: event.pageX + "px"});
-        }
     });
-    $(document).bind("click", function(event) {
-        visible = false;
-        $("div.custom-menu").hide();
-    });
-});
 </script>
+<script src="scripts/blueimp_gallery/blueimp-gallery.js"></script>
+<script src="scripts/blueimp_gallery/jquery.blueimp-gallery.js"></script>
+<script src="scripts/bootstrap_image_gallery/js/bootstrap-image-gallery.js"></script>
 
 <?php
     include("footer.php");

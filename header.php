@@ -4,25 +4,23 @@
     <title>Hilde Morris Portraiture</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="horse and dog portraits, commision, Hilde Morris, artist">
     <link rel="shortcut icon" href="images/diverse/ikon1.ico">
 	
     <!--JQuery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <!--Slick-->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <!--Slick CSS-->
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css">
     <!--Bootstrap JS-->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!--Style.css-->
-    <link rel="stylesheet" href="style.css"></link>
-    
+    <!-- Blueimp CSS -->
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="bootstrap_image_gallery/css/bootstrap-image-gallery.min.css">
-    
-    <!-- Hvorfor virker ikke de lokale filene! -->
-    <!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
-    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"></link>-->
+    <!-- Bootstrap image gallery CSS -->
+    <link rel="stylesheet" href="scripts/bootstrap_image_gallery/css/bootstrap-image-gallery.min.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="style.css"></link>
     <script>
 	$(document).ready(function(){
 	    $('.dropdown-toggle').dropdown()
