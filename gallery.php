@@ -5,6 +5,7 @@
     
     $json = json_decode(file_get_contents("model/paintings.json"));
     $file_title = $json->$page;
+    $numPaintings = count($file_title);
 ?>
 <?php
     include("header.php");
@@ -55,7 +56,7 @@
         <p>Click on the images below to see them in full format</p>
     </div>
     <div id="links">
-    <?php for ($imNum = 0; $imNum < $numPaintings-1; $imNum++):
+    <?php for ($imNum = 0; $imNum < $numPaintings; $imNum++):
         $file = $file_title[$imNum][0];
         $title = $file_title[$imNum][1];
         $subtitle = $file_title[$imNum][2];
