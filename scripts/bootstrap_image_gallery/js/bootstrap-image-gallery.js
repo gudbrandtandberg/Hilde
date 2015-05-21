@@ -30,17 +30,7 @@
     $.extend(Gallery.prototype.options, {
         useBootstrapModal: true,
         onopen: function(){
-          alert("open");  
         },
-        onslide: function (index, slide) {
-            alert("her");
-            var text = this.list[index].getAttribute('data-description'),
-                node = this.container.find('.description');
-            node.empty();
-            if (text) {
-                node[index].appendChild(document.createTextNode(text));
-            }
-        }
     });
 
     var close = Gallery.prototype.close,
@@ -74,10 +64,6 @@
                     modal.addClass('in');
                 }, factoryInterface);
             modal.find('.modal-title').text(element.title || String.fromCharCode(160));
-            //modal.find('.modal-description').text("hello");
-            //console.log(element);
-            //var text = this.list[0].getAttribute('data-description');
-            //alert(text);            
             modal.find('.modal-body').append(element);
             return modal[0];
         },

@@ -37,11 +37,13 @@ var visible = false;
                 $(Gallery.prototype.options.container),
             callbacks = {
                 onopen: function () {
+                    
                     container
                         .data('gallery', this)
                         .trigger('open');
                 },
                 onopened: function () {
+                    
                     //hindrer høyreklikk
                     $(container).bind("contextmenu", function(event){
                         event.preventDefault();

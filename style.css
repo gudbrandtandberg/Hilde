@@ -8,7 +8,7 @@ p {
     font-size: larger;
 }
 .prosessbilde {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 .custom-menu {
     z-index:2000000;
@@ -58,6 +58,7 @@ body {
     height: 70px;
     background-color: #f5f5f5;
     text-align: center;
+    padding: 0;
 }
 
 .footer > .container {
@@ -141,11 +142,12 @@ ul.dropdown-menu > li {
 /* GALLERY STYLING  */
 
 .blueimp-gallery .modal-title {
-    font-size: large;
+    font-size: 20px;
     font-weight: 500;
 }
 .blueimp-gallery p.modal-description {
   color: #222;
+  font-size: 15px;
   display: inline-block;
   width: 60%;
   position: relative;
@@ -155,6 +157,7 @@ ul.dropdown-menu > li {
 
 #gallericontainer {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .col-xs-6, .col-md-3 {

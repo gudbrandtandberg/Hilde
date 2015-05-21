@@ -135,7 +135,7 @@
             // and from first to last slide:
             continuous: true,
             // Remove elements outside of the preload range from the DOM:
-            unloadElements: true,
+            unloadElements: false, //HER!
             // Start with the automatic slideshow:
             startSlideshow: false,
             // Delay in milliseconds between slides for the automatic slideshow:
@@ -145,7 +145,7 @@
             // or an equal object with the same url property:
             index: 0,
             // The number of elements to load around the current index:
-            preloadRange: 2,
+            preloadRange: 6,  //HER!
             // The transition speed between slide changes in milliseconds:
             transitionSpeed: 400,
             // The transition speed for automatic slide changes, set to an integer
@@ -164,16 +164,7 @@
             // Callback function executed on slide change.
             // Is called with the gallery instance as "this" object and the
             // current index and slide as arguments:
-            onslide: function (index, slide) {
-                alert("hei");
-                var text = this.list[index].getAttribute('data-description'),
-                    node = this.container.find('.description');
-                node.empty();
-                if (text) {
-                    node[index].appendChild(document.createTextNode(text));
-                    //$(".beskrivelse").val(text);
-                }
-            },
+            onslide: undefined,
             // Callback function executed after the slide change transition.
             // Is called with the gallery instance as "this" object and the
             // current index and slide as arguments:
@@ -817,8 +808,9 @@
             switch (event.which || event.keyCode) {
             case 13: // Return
                 if (this.options.toggleControlsOnReturn) {
-                    this.preventDefault(event);
-                    this.toggleControls();
+                    //this.preventDefault(event);
+                    //this.toggleControls()
+                    return;
                 }
                 break;
             case 27: // Esc
