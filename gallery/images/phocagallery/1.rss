@@ -1,0 +1,104 @@
+<rss xmlns:media="http://search.yahoo.com/mrss" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <atom:icon>http://localhost/demo/components/com_phocagallery/assets/images/icon-phocagallery.png</atom:icon>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC08703</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC08703.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC08703.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC08703.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC08703.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC08832</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC08832.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC08832.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC08832.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC08832.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09010</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09010.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09010.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09010.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09010.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09011</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09011.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09011.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09011.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09011.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09026</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09026.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09026.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09026.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09026.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09033</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09033.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09033.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09033.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09033.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09054</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09054.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09054.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09054.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09054.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09056</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09056.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09056.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09056.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09056.JPG</guid>
+        </item>
+        <title>Phoca Gallery</title>
+        <link>http://www.phoca.cz/</link>
+        <description>Phoca Gallery</description>
+        <item>
+            <title>DSC09067</title>
+            <link>http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09067.JPG</link>
+            <description></description>
+            <media:thumbnail url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09067.JPG" />
+            <media:content url="http://localhost/demo/images/phocagallery/COLL_HERMITAGE/thumbs/phoca_thumb_l_DSC09067.JPG" />
+            <guid isPermaLink="false">1-phocagallerypiclenscode-COLL_HERMITAGE/DSC09067.JPG</guid>
+        </item>
+    </channel>
+</rss>

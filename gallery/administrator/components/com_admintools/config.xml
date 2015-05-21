@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<!-- Live update -->
+		<param name="downloadid" type="text" default="" size="30"
+			label="ATOOLS_LBL_CONFIG_DOWNLOADID"
+			description ="" />
+		<!-- Joomla! updates cache -->
+		<param name="latestjversion" type="hidden" default="" label="" description="" />
+		<param name="lastjupdatecheck" type="hidden" default="" label="" description="" />
+		<!-- Admin Tools updates cache -->
+		<param name="liveupdate" type="hidden" default="" label="" description="" />
+		<!-- Last run timestamps for plugin's schedulable functions -->
+		<param name="timestamp_session_optimize" type="hidden" default="" label="" description="" />
+		<param name="timestamp_session_clean" type="hidden" default="" label="" description="" />
+		<param name="timestamp_cache_clean" type="hidden" default="" label="" description="" />
+		<param name="timestamp_cache_expire" type="hidden" default="" label="" description="" />
+		<param name="timestamp_clean_temp" type="hidden" default="" label="" description="" />
+		<!-- Web Application Firewall settings -->
+		<param name="ipwl" type="hidden" default="0" label="" description="" />
+		<param name="ipbl" type="hidden" default="0" label="" description="" />
+		<param name="adminpw" type="hidden" default="" label="" description="" />
+		<param name="blockinstall" type="hidden" default="1" label="" description="" />
+		<param name="nonewadmins" type="hidden" default="1" label="" description="" />
+		<param name="encodedby" type="hidden" default="" label="" description="" />
+		<param name="poweredby" type="hidden" default="" label="" description="" />
+		<param name="nojoomla" type="hidden" default="0" label="" description="" />
+		<param name="sqlishield" type="hidden" default="1" label="" description="" />
+		<param name="antispam" type="hidden" default="0" label="" description="" />
+		<param name="custgenerator" type="hidden" default="0" label="" description="" />
+		<param name="generator" type="hidden" default="" label="" description="" />
+		<param name="tpone" type="hidden" default="1" label="" description="" />
+		<param name="tmpl" type="hidden" default="1" label="" description="" />
+		<param name="template" type="hidden" default="1" label="" description="" />
+		<param name="logbreaches" type="hidden" default="1" label="" description="" />
+		<param name="emailonadminlogin" type="hidden" default="" label="" description="" />
+		<param name="emailonfailedadminlogin" type="hidden" default="" label="" description="" />
+		<param name="emailbreaches" type="hidden" default="" label="" description="" />
+		<param name="badbehaviour" type="hidden" default="1" label="" description="" />
+		<param name="bbstrict" type="hidden" default="0" label="" description="" />
+		<param name="bbhttpblkey" type="hidden" default="" label="" description="" />
+		<param name="bbwhitelistip" type="hidden" default="66.211.170.66" label="" description="" />
+		<param name="tsrenable" type="hidden" default="0" label="" description="" />
+		<param name="tsrstrikes" type="hidden" default="3" label="" description="" />
+		<param name="tsrnumfreq" type="hidden" default="1" label="" description="" />
+		<param name="tsrfrequency" type="hidden" default="hour" label="" description="" />
+		<param name="tsrbannum" type="hidden" default="1" label="" description="" />
+		<param name="tsrbanfrequency" type="hidden" default="day" label="" description="" />
+		<param name="spammermessage" type="hidden" default="You are a spammer, hacker or an otherwise bad person. We hate you." label="" description="" />
+		<param name="muashield" type="hidden" default="1" label="" description="" />
+		<param name="csrfshield" type="hidden" default="1" label="" description="" />
+		<param name="rfishield" type="hidden" default="1" label="" description="" />
+		<param name="dfishield" type="hidden" default="1" label="" description="" />
+		<param name="uploadshield" type="hidden" default="1" label="" description="" />
+		<param name="xssshield" type="hidden" default="1" label="" description="" />
+		<param name="nofesalogin" type="hidden" default="0" label="" description="" />
+		<param name="tmplwhitelist" type="hidden" default="component,system" label="" description="" />
+		<!-- SEO & Link Tools -->
+		<param name="linkmigration" type="hidden" default="0" label="" description="" />
+		<param name="migratelist" type="hidden" default="" label="" description="" />
+		<param name="backprotection" type="hidden" default="0" label="" description="" />
+		<!-- Custom permissions -->
+		<param name="dirperms" type="hidden" default="0755" label="" description="" />
+		<param name="fileperms" type="hidden" default="0644" label="" description="" />
+		<!-- Master password protection -->
+		<param name="masterpassword" type="hidden" default="" label="" description="Master password for the component" />
+		<param name="lockedviews" type="hidden" default="" label="" description="Views locked with the master password" />
+		<!-- Geoblocking -->
+		<param name="geoblockcountries" type="hidden" default="" label="" description="" />
+		<param name="geoblockcontinents" type="hidden" default="" label="" description="" />
+		<!-- Joomla! 1.5 ACL -->
+		<param name="minimum_acl_group" type="hidden" default="super administrator" label="" description="" />
+	</params>
+	
+	<!-- Joomla! 1.6... -->
+	
+	<fieldset
+		name="updates"
+		label="ATOOLS_JCONFIG_UPDATES_LABEL"
+		description="ATOOLS_JCONFIG_UPDATES_DESC"
+		>
+		<field name="downloadid" type="text" default="" size="30"
+			label="ATOOLS_LBL_CONFIG_DOWNLOADID"
+			description ="" />
+	</fieldset>
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_admintools"
+			section="component" />
+	</fieldset>	
+	
+	<fieldset name="advanced">
+		<!-- Joomla! updates cache -->
+		<field name="latestjversion" type="hidden" default="" label="" description="" />
+		<field name="lastjupdatecheck" type="hidden" default="" label="" description="" />
+		<!-- Admin Tools updates cache -->
+		<field name="liveupdate" type="hidden" default="" label="" description="" />
+		<!-- Last run timestamps for plugin's schedulable functions -->
+		<field name="timestamp_session_optimize" type="hidden" default="" label="" description="" />
+		<field name="timestamp_session_clean" type="hidden" default="" label="" description="" />
+		<field name="timestamp_cache_clean" type="hidden" default="" label="" description="" />
+		<field name="timestamp_cache_expire" type="hidden" default="" label="" description="" />
+		<field name="timestamp_clean_temp" type="hidden" default="" label="" description="" />
+		<!-- Web Application Firewall settings -->
+		<field name="ipwl" type="hidden" default="0" label="" description="" />
+		<field name="ipbl" type="hidden" default="0" label="" description="" />
+		<field name="adminpw" type="hidden" default="" label="" description="" />
+		<field name="blockinstall" type="hidden" default="0" label="" description="" />
+		<field name="nonewadmins" type="hidden" default="1" label="" description="" />
+		<field name="encodedby" type="hidden" default="" label="" description="" />
+		<field name="poweredby" type="hidden" default="" label="" description="" />
+		<field name="nojoomla" type="hidden" default="0" label="" description="" />
+		<field name="sqlishield" type="hidden" default="1" label="" description="" />
+		<field name="antispam" type="hidden" default="0" label="" description="" />
+		<field name="custgenerator" type="hidden" default="0" label="" description="" />
+		<field name="generator" type="hidden" default="" label="" description="" />
+		<field name="tpone" type="hidden" default="1" label="" description="" />
+		<field name="tmpl" type="hidden" default="1" label="" description="" />
+		<field name="template" type="hidden" default="1" label="" description="" />
+		<field name="logbreaches" type="hidden" default="1" label="" description="" />
+		<field name="emailonadminlogin" type="hidden" default="" label="" description="" />
+		<field name="emailonfailedadminlogin" type="hidden" default="" label="" description="" />
+		<field name="emailbreaches" type="hidden" default="" label="" description="" />
+		<field name="badbehaviour" type="hidden" default="1" label="" description="" />
+		<field name="bbstrict" type="hidden" default="0" label="" description="" />
+		<field name="bbhttpblkey" type="hidden" default="" label="" description="" />
+		<field name="bbwhitelistip" type="hidden" default="66.211.170.66" label="" description="" />
+		<field name="tsrenable" type="hidden" default="0" label="" description="" />
+		<field name="tsrstrikes" type="hidden" default="3" label="" description="" />
+		<field name="tsrnumfreq" type="hidden" default="1" label="" description="" />
+		<field name="tsrfrequency" type="hidden" default="hour" label="" description="" />
+		<field name="tsrbannum" type="hidden" default="1" label="" description="" />
+		<field name="tsrbanfrequency" type="hidden" default="day" label="" description="" />
+		<field name="spammermessage" type="hidden" default="You are a spammer, hacker or an otherwise bad person. We hate you." label="" description="" />
+		<field name="muashield" type="hidden" default="1" label="" description="" />
+		<field name="csrfshield" type="hidden" default="1" label="" description="" />
+		<field name="rfishield" type="hidden" default="1" label="" description="" />
+		<field name="dfishield" type="hidden" default="1" label="" description="" />
+		<field name="uploadshield" type="hidden" default="1" label="" description="" />
+		<field name="xssshield" type="hidden" default="1" label="" description="" />
+		<field name="nofesalogin" type="hidden" default="0" label="" description="" />
+		<field name="tmplwhitelist" type="hidden" default="component,system" label="" description="" />
+		<!-- SEO & Link Tools -->
+		<field name="linkmigration" type="hidden" default="0" label="" description="" />
+		<field name="migratelist" type="hidden" default="" label="" description="" />
+		<field name="backprotection" type="hidden" default="0" label="" description="" />
+		<!-- Custom permissions -->
+		<field name="dirperms" type="hidden" default="0755" label="" description="" />
+		<field name="fileperms" type="hidden" default="0644" label="" description="" />
+		<!-- Master password protection -->
+		<field name="masterpassword" type="hidden" default="" label="" description="Master password for the component" />
+		<field name="lockedviews" type="hidden" default="" label="" description="Views locked with the master password" />		
+		<!-- Geoblocking -->
+		<field name="geoblockcountries" type="hidden" default="" label="" description="" />
+		<field name="geoblockcontinents" type="hidden" default="" label="" description="" />
+	</fieldset>
+	
+</config>
