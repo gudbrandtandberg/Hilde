@@ -23,7 +23,7 @@
     </p>
     <p>
         When we have a clear concept we can agree on a contract. To see a Contract template,
-        follow <a href="images/diverse/contract_english.pdf" target="_blank" style="color: blue;">this</a> link.
+        follow <a href="images/diverse/contract_english.pdf" target="_blank" style="color: grey;">this</a> link.
     </p>
     <p>
         For the initial sketching I need to meet the dog or horse. I would like to see him/her in action
@@ -45,17 +45,6 @@
         <img class="prosessbilde" src="images/diverse/hedda2.jpg" width="100%"/>
         <img class="prosessbilde" src="images/diverse/hedda.jpg" width="100%"/>
     </div>
-
-<!--
-    <ol>
-        <li>Agree on contract</li>
-        <li>Meet dog/horse. Preliminary sketches. Take photograph for support</li>
-        <li>Studio work. Send first versions by mms/email for owner comments</li>
-        <li>New meeting with dog/horse (optional)</li>
-        <li>Final studio work</li>
-        <li>(oil paintings) wait 2 weeks to dry before delivery</li>
-    </ol>
--->
 </div>
 
 <?php

@@ -22,12 +22,17 @@
     <table class="big">
         <tr>
             <td>
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:hilde@hildemorris.com">hilde@hildemorris.com</a>
+                <span style="color: black;" class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:hilde@hildemorris.com">hilde@hildemorris.com</a>
             </td>
         </tr>
         <tr>
             <td>
-                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 90394958
+                <span><img src="images/diverse/facebook_icon.png" /> <a href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080">My facebook page</a></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="color: black;" class="glyphicon glyphicon-phone" aria-hidden="true"></span> 90394958
             </td>
         </tr>
     </table>
