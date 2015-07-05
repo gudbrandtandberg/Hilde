@@ -37,16 +37,14 @@
             I work from life, because that way I can understand better the animal’s personality. To learn more about the process, see <a href="process.php">PROCESS</a>.
         </p>    
         <p>
-            In this website you will find examples of my paintings grouped by categories. Some of the paintings are
+            On this website you will find examples of my paintings grouped by categories. Some of the paintings are
             privately owned, but some may also be available for sale.
         </p>
         
-        <div>
-        
-        <img style="display: inline-block; width: 70%;" src="http://fontmeme.com/embed.php?text=Hilde%20Morris&name=
-Sunshine in my Soul.ttf&size=40&style_color=000000" alt="Handwriting Fonts">
+        <div id="signaturecontainer">
             
-        <!--    <img style="display: block; width: 25%; margin: 0 auto;" src="images/diverse/hestesko.png" />-->
+            <img style="display: inline-block; width: 70%;" src="images/diverse/signatur.png" />
+            <img style="display: inline-block; width: 25%;" src="images/diverse/hestesko.png" />
         </div>
     </div>
     
