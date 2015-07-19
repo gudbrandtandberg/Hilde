@@ -28,7 +28,7 @@
     
     <div class="col-sm-12 col-md-6">
         
-        <h3>Welcome to hildemorris.com!</h3>
+        <h3 style="margin-top: 0;">Welcome to hildemorris.com!</h3>
         
         <p>
             I am an artist and a veterinarian. By combining my two professions I am now doing what I love: painting portraits of dogs and horses. My goal is to create a personal portrait that conveys your animal’s character in a way that you will appreciate, so you can have a beautiful piece of art portraying your own dog or horse.
@@ -42,9 +42,7 @@
         </p>
         
         <div id="signaturecontainer">
-            
-            <img style="display: inline-block; width: 70%;" src="images/diverse/signatur.png" />
-            <img style="display: inline-block; width: 25%;" src="images/diverse/hestesko.png" />
+            <img style="display: block; width: 120px; margin: 0 auto;" src="images/diverse/hestesko.png" />
         </div>
     </div>
     
