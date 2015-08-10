@@ -10,6 +10,17 @@
     include("header.php");
 ?>
 
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
 <script type="text/javascript">
     $(document).ready(function(){ 
         $('.karusell').slick({
@@ -42,11 +53,15 @@
         </p>
         
         <div id="signaturecontainer">
-            <img style="display: block; width: 120px; margin: 0 auto;" src="images/diverse/hestesko.png" />
+            
+            <div style="top: 30px; margin-right: 20px;" class="fb-page" data-href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080"><a href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080">Hilde Morris Horse &amp; Dog Portraiture</a></blockquote></div></div>
+            <img style="display: inline-block; width: 120px;" src="images/diverse/hestesko.png" />
         </div>
     </div>
     
     <div class="col-sm-12 col-md-6">
+        
+        
         
         <div class="karusell">
             <?php
