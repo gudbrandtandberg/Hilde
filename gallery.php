@@ -53,7 +53,7 @@
 
 <div class="container-fluid" id="gallericontainer">
     <div class="col">
-        <p>Click on the images below to see them in full format</p>
+        <p><?=$clickimg;?></p>
     </div>
     <div id="links">
     <?php for ($imNum = 0; $imNum < $numPaintings; $imNum++):
@@ -85,7 +85,7 @@
             event.preventDefault();
             if (!visible) {
                 visible = true;
-                $("<div class='custom-menu'>These photos are copyrighted by Hilde Morris. All rights reserved. Unauthorized use prohibited.</div>")
+                $("<div class='custom-menu'><?=$copyrightctx;?></div>")
                 .appendTo("body").css({top: event.pageY + "px", left: event.pageX + "px"});
             }
         }

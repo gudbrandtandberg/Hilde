@@ -30,6 +30,9 @@
             speed: 1500,
             swipe: false
         });
+        
+        
+        
     });
 </script>
 
@@ -37,48 +40,45 @@
 
 <div class="container">
     
+	<div class="row">
+	<div class="col-sm-12">
+		<img src="images/diverse/plakat.jpg" style="display: block; width: 950px; margin: 0 auto;">
+	</div>
+	</div>
+	
+	<hr>
+	
     <div class="col-sm-12 col-md-6">
         
-        <h3 style="margin-top: 0;">Welcome to hildemorris.com!</h3>
-        
-        <p>
-            I am an artist and a veterinarian. By combining my two professions I am now doing what I love: painting portraits of dogs and horses. My goal is to create a personal portrait that conveys your animal’s character in a way that you will appreciate, so you can have a beautiful piece of art portraying your own dog or horse.
-        </p>
-        <p>
-            I work from life, because that way I can understand better the animal’s personality. To learn more about the process, see <a href="process.php">PROCESS</a>.
-        </p>    
-        <p>
-            On this website you will find examples of my paintings grouped by categories. Some of the paintings are
-            privately owned, but some may also be available for sale.
-        </p>
+        <h3 style="margin-top: 0;"><?=$welcome;?></h3>
+        <?=$maintext;?>
         
         <div id="signaturecontainer">
             
             <div style="top: 30px; margin-right: 20px;" class="fb-page" data-href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080"><a href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080">Hilde Morris Horse &amp; Dog Portraiture</a></blockquote></div></div>
-            <img style="display: inline-block; width: 120px;" src="images/diverse/hestesko.png" />
+            <img style="display: inline-block; width: 120px; left: 20px; position: relative;" src="images/diverse/hestesko.png" />
         </div>
     </div>
-    
+	
     <div class="col-sm-12 col-md-6">
-        
-        
-        
+
         <div class="karusell">
             <?php
-                $homepage = "homepage";
+                $homepageFolder = "homepage";
                 $json = json_decode(file_get_contents("model/paintings.json"));
-                $files = $json->$homepage;
-                $numPaintings = count($files);
-                for ($imNum = 0; $imNum < $numPaintings-1; $imNum++):
+                $files = $json->$homepageFolder;
+                foreach ($files as $file):
             ?>
-            <div>
-                <div class="karusellbilde" style="background-image: url('images/<?=$files[$imNum];?>');"></div>
+            <div class="karusellbildebeholder">
+                <div class="karusellbilde" style="background-image: url('images/<?=$file;?>');"></div>
             </div>
-            <?php endfor; ?>
+            <?php endforeach; ?>
+
         </div>
         
     </div>
     
+	
 </div>
 
 <script type="text/javascript" src="scripts/slick/slick.min.js"></script>

@@ -31,9 +31,8 @@ body {
     font-family: helvetica;
     border-color: #330000;
     margin: 0;
-    padding-top: 20px;
     height: 100%;
-    top: -20px;
+    
     position: relative;
 }
 #wrapper {
@@ -60,27 +59,49 @@ body {
     background-color: #f5f5f5;
     text-align: center;
     padding: 0;
+    color: #777;
 }
 
 .footer > .container {
     padding-top: 10px;
 }
 
+.bunntekst {
+    margin: 0;
+}
+.toggle-lang {
+    margin: 0;
+    color: #777;
+    position: relative;
+}
+.toggle-lang:hover {
+    cursor: pointer;
+    color: #777;
+    text-decoration: underline;
+}
+
+
 /*  HEADER & NAVBAR STYLING   */
 
-h1 {
+#header {
+    box-shadow: 0px 3px 3px grey;
+}
+
+#header > h1 {
+    margin: 15px 0 0 0;
     font-size: 35px;
-    margin-bottom: 10px;
     text-align: center;
 }
 .navbar-default {
     background-color: #ffffff;
     border-top: none;
-    border-color: #E7E7E7;
+    padding-bottom: 0;
 }
 .navbar-nav {
     width: 100%;
     text-align: center;
+    font-size: 1.1em;
+    padding: 0;
 }
 .navbar-nav > li, .navbar-nav li {
     float: none;
@@ -103,11 +124,11 @@ ul.dropdown-menu > li {
     display: none;
 }
 
+
 /*  HJEM STYLING   */
 
 .karusellbilde {
-    border: inset 10px grey;
-    width: 100%;
+    border: 2px solid black;
     height: 420px;
     background-size: cover;
     background-position: center center;
@@ -174,9 +195,7 @@ ul.dropdown-menu > li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
-
 
 
 

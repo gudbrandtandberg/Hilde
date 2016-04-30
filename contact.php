@@ -17,7 +17,7 @@
 <div class="container">
     
     <p class="quitebig" style="text-align: center;">
-        If you are interested in buying a painting, commissioning a portrait of your pet, or if you have any other questions, please contact me at:
+        <?=$contacttext;?>
     </p>
     <table class="big">
         <tr>
@@ -27,12 +27,12 @@
         </tr>
         <tr>
             <td>
-                <span><img src="images/diverse/facebook_icon.png" /> <a href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080">My facebook page</a></span>
+                <span><img src="images/diverse/facebook_icon.png" /> <a href="https://www.facebook.com/pages/Hilde-Morris-Horse-Dog-Portraiture/440544189448080"><?=$fb;?></a></span>
             </td>
         </tr>
         <tr>
             <td>
-                <span style="color: black;" class="glyphicon glyphicon-phone" aria-hidden="true"></span> 90394958
+                <span style="color: black;" class="glyphicon glyphicon-phone" aria-hidden="true"></span> (+47) 92298921
             </td>
         </tr>
     </table>
