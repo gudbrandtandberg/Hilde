@@ -11,7 +11,7 @@
 -->
 
 <div id="fb-root"></div>
-
+Hello
 <script>
 (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -37,8 +37,6 @@
 <!-- HOME -->
 
 <div class="container">
-	
-	
 	
     <div class="col-sm-12 col-md-6">
         

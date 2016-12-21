@@ -28,10 +28,9 @@ include("header.php");
     });
 </script>
 
-header("Location: home/");
-
 <div class="container">
     
+	<!-- Her kan vi ha midlertidige plakater osv. 
 	<div class="row">
 	<div class="col-sm-12">
 		<img src="images/diverse/plakat.jpg" style="display: block; width: 950px; margin: 0 auto;">
@@ -39,7 +38,7 @@ header("Location: home/");
 	</div>
 	
 	<hr>
-	
+	-->
     <div class="col-sm-12 col-md-6">
         
         <h3 style="margin-top: 0;"><?=$welcome;?></h3>

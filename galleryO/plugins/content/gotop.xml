@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - GoTop</name>
+	<author>CS</author>
+	<creationDate>Oktober 2009</creationDate>
+	<copyright>This plugin is released under the GNU/GPL License</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>cs.sh34@googlemail.com</authorEmail>
+	<authorUrl>http://joomlacode.org/gf/project/gotop/</authorUrl>
+	<version>3.0815</version>
+		<description>Content-Plugin to show a 'go to top of page' text- or image-link. Activate this plugin and insert {gotop} in the content/article where the link shall appear. (requires the browser's Javascript to be activated!)</description>
+	<files>
+		<filename plugin="gotop">gotop.php</filename>
+  </files>
+  <params>
+    <param name="Limg" type="imagelist" directory="/images/M_images" hide_default="1" default="-1" label="Link image" description="Choose an image which will be displayd instead of the 'link text' below. (place an own link-image in: [/images/M_images/]." />
+    <param name="Ltxt" type="text" default="[ ↑ ]" label="Link Text" description="Enter the text to be shown for the link. This text will only appear if the 'link image' (above) is deselected!" />
+    <param name="Lwidth" type="text" default="" label="Link width (+CSS)" description="Enter width value and unit (px, pt, %, etc.) for the link area. In this area the mouse will appear as pointer/hand when moved over. Behind this 'width'-value additional CSS may be inserted (e.g. '; height: 2em; text-align: right; font-weight: bold;' etc.)." />
+    <param name="Ltitle" type="text" default="" label="Link title" description="Enter the text to be shown as popup/tooltip (title) text when moving the mouse over the link." />
+    <param name="Lhrabove" type="radio" default="0" label="Horizontal Line (above)" description="State if a horizontal Line shall be placed above the 'go top' link (e.g. as separator).">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Lhrbelow" type="radio" default="0" label="Horizontal Line (below)" description="State if a horizontal Line shall be placed below the 'go top' link (e.g. as separator).">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Lprint" type="radio" default="0" label="Print" description="Choose whether the gotop-link shall appear on printed pages or not.">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+  </params>
+</install>

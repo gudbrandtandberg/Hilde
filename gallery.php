@@ -14,7 +14,7 @@
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
 
-<div id="blueimp-gallery" class="blueimp-gallery">
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
     <!-- Controls for the borderless lightbox -->
@@ -93,7 +93,7 @@
 </script>
 <script src="scripts/blueimp_gallery/blueimp-gallery.js"></script>
 <script src="scripts/blueimp_gallery/jquery.blueimp-gallery.js"></script>
-<script src="scripts/bootstrap_image_gallery/js/bootstrap-image-gallery.js"></script>
+<!--<script src="scripts/bootstrap_image_gallery/js/bootstrap-image-gallery.js"></script>-->
 
 <?php
     include("footer.php");
