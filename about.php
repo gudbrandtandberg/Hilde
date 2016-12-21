@@ -13,7 +13,7 @@
             <?=$abouttext;?>
         </p>
         
-        <img style="margin: 0 auto; display: block; border: inset 10px grey;" src="images/diverse/hilde.jpg" width="80%"/>
+        <img style="margin: 0 auto; display: block; border: solid 2px black;" src="images/diverse/hilde.jpg" width="80%"/>
     </div>
 
     <div class="col-md-6">
