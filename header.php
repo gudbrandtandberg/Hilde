@@ -1,10 +1,21 @@
+<?php
+    if (!isset($_SESSION)) session_start();
+    
+    if (!isset($_SESSION["lang"])) {	
+	$_SESSION["lang"] = "no";
+    }
+    
+    $lang = $_SESSION["lang"];
+    include($lang.".strings.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hilde Morris Portraiture</title>
+    <title><?=$title;?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="horse and dog portraits, commision, Hilde Morris, artist">
+    <meta name="description" content="Hilde Morris horse and dog portrait artist. See art, request commisions.">
     <link rel="shortcut icon" href="images/diverse/ikon1.ico">
 	
     <!--JQuery-->
@@ -23,7 +34,15 @@
     <link rel="stylesheet" href="style.css"></link>
     <script>
 	$(document).ready(function(){
+
 	    $('.dropdown-toggle').dropdown()
+	    
+	    $(".toggle-lang").click(function(e){
+		e.preventDefault();
+		$.ajax("toggle-lang.php", {success: function(data){
+		    location.reload();
+		}});
+	    });
 	});
     </script>
 </head>
@@ -32,23 +51,23 @@
     <div id="wrapper">
     <div id="header">
         <h1>
-            HILDE MORRIS HORSE & DOG PORTRAITURE
+            <?=$title;?>
         </h1>
 	<nav class="navbar navbar-default">
 	    <div class="navbar-header"></div>
 	    <ul class="nav navbar-nav">
-		<li><a id="home" href="index.php">HOME</a></li>
+		<li><a id="home" href="index.php"><?=$home;?></a></li>
 		<li class="dropdown">
-		    <a href="gallerynav.php">GALLERY</a> 
+		    <a href="gallerynav.php"><?=$gallery;?></a> 
 		    <ul class="dropdown-menu" role="menu">
-			<li><a href="gallery.php?page=horses">HORSES</a></li>
-			<li><a href="gallery.php?page=dogs">DOGS</a></li>
-			<li><a href="gallery.php?page=other">OTHER</a></li>
+			<li><a href="gallery.php?page=horses"><?=$horses;?></a></li>
+			<li><a href="gallery.php?page=dogs"><?=$dogs;?></a></li>
+			<li><a href="gallery.php?page=other"><?=$other;?></a></li>
 		    </ul>
 		</li>
-		<li><a href="process.php">PROCESS</a></li>
-		<li><a href="about.php">ABOUT THE ARTIST</a></li>
-		<li><a href="contact.php">CONTACT</a></li>
+		<li><a href="process.php"><?=$process;?></a></li>
+		<li><a href="about.php"><?=$about;?></a></li>
+		<li><a href="contact.php"><?=$contact;?></a></li>
 	    </ul>
 	</nav>
 

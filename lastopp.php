@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    if ($_SESSION["loggedin"] !== "true")
+        header("Location: http://hildemorris.com/login.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +41,15 @@
 	    $("#lastoppknapp").click(function(){
 	       $("#formen").submit();
 	    });
+
+            $("#slett_select").change(function() {
+               var slett_arr = $("#slett_select").val().split(";");
+               $("#slett_img").attr("src", "images/" + slett_arr[0] + "/" + slett_arr[1]);
+            });
+
+            $("#logout").click(function() {
+                window.location.replace("http://hildemorris.com/logout.php");
+            });
 	});
     </script>
 </head>
@@ -87,10 +101,54 @@
 	    </tr>
 	
 	</table>
-    
     </form>
+    <h1>Slett bilde</h1>
+    <div style="width: 600px; margin: auto;"> 
+    <form id="slettform" name="slettform" action="slettbilde.php" method="post" enctype="multipart/form-data">
+        <select id="slett_select" form="slettform" name="delete_pic">
+        <?php
+            echo "<optgroup label=\" -- HUNDER -- \">"; 
+            $pics = json_decode(file_get_contents("model/paintings.json"));
+            $dogs = $pics->dogs;
+            $dogCount = count($dogs);
+            for ($i = 0; $i < $dogCount; $i++){
+                echo "<option value=\"dogs;" . $dogs[$i][0] . ";" . $i . "\">" . $dogs[$i][1] . "</option>";
+            }
+            echo "</optgroup>";
+
+            echo "<optgroup label=\" -- HESTER -- \">";
+            $horses = $pics->horses;
+            $horseCount = count($horses);
+            for ($i = 0; $i < $horseCount; $i++) {
+                echo "<option value=\"horses;" . $horses[$i][0] . ";" . $i . "\">" . $horses[$i][1] . "</option>";
+            }
+            echo "</optgroup>";
+            
+            echo "<optgroup label=\" -- ANDRE -- \">";
+            $other = $pics->other;
+            $otherCount = count($other);
+            for ($i = 0; $i < $otherCount; $i++) {
+                echo "<option value=\"other;" . $other[$i][0] . ";" . $i . "\">" . $other[$i][1] . "</option>";
+            }
+            echo "</optgroup>";
+        ?>
+        </select>
+        <button class="btn btn-default" id="slettknapp"> Slett </button>
+    </form>
+    <img id="slett_img" width=500px src=<?php echo "\"images/dogs/" . $dogs[0][0] . "\""?>>
+    <form id="newsform" name="newsform" action="nynytt.php" method="post" enctype="multipart/farm-data">
+        <h1>Oppdater siste nytt</h1>
+        <textarea id="news" form="newsform" name="news" rows="10" cols="70">
+            <?php
+                $news_file_name = "siste_nytt.txt";
+                $news_file = fopen($news_file_name, "r");
+                echo fread($news_file, filesize($news_file_name));
+                fclose($news_file);
+           ?>
+        </textarea>
+        <button class="btn btn-default" id="oppdaterknapp"> Oppdater </button>
+    </form>
+    <button class="btn btn-danger" id="logout"> Logg ut </button>
+    </div>
 </body>
 </html>
-
-
-

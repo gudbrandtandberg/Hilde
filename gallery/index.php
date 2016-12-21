@@ -1,88 +1,100 @@
 <?php
-/**
-* @version		$Id: index.php 14401 2010-01-26 14:10:00Z louis $
-* @package		Joomla
-* @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
-* @license		GNU/GPL, see LICENSE.php
-* Joomla! is free software. This version may have been modified pursuant
-* to the GNU General Public License, and as distributed it includes or
-* is derivative of works licensed under the GNU General Public License or
-* other free or open source software licenses.
-* See COPYRIGHT.php for copyright notices and details.
-*/
+    $page = $_GET["page"];
+    $paintings = scandir("../images/".$page);
+    $numPaintings = count($paintings)-2;  //scandir lister opp . og .. også
+    
+    $json = json_decode(file_get_contents("../model/paintings.json"));
+    $file_title = $json->$page;
+    $numPaintings = count($file_title);
+?>
+<?php
+    include("../templates/header.php");
+?>
 
-// Set flag that this is a parent file
-define( '_JEXEC', 1 );
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
 
-define('JPATH_BASE', dirname(__FILE__) );
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <p class="modal-description"></p>
+                    <button type="button" class="btn btn-default next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-define( 'DS', DIRECTORY_SEPARATOR );
+<!-- Dette er gridet -->
 
-require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' );
-require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' );
+<div class="container-fluid" id="gallericontainer">
+    <div class="col">
+        <p><?=$clickimg;?></p>
+    </div>
+    <div id="links">
+    <?php for ($imNum = 0; $imNum < $numPaintings; $imNum++):
+        $file = $file_title[$imNum][0];
+        $title = $file_title[$imNum][1];
+        $subtitle = $file_title[$imNum][2];
+    ?>
+        <div class="col-xs-6 col-md-3">
+            <a href="../images/<?=$page;?>/<?=$file;?>" class="thumbnail" data-gallery title="<?=$title;?>" data-description="<?=$subtitle;?>">
+                <div class="tommelbildebeholder" style="background-image: url('../images/<?=$page;?>/<?=$file;?>');"></div>
+            </a>
+        </div>
+    <?php endfor; ?>
+    </div>
+</div>
 
-JDEBUG ? $_PROFILER->mark( 'afterLoad' ) : null;
+<script type="text/javascript">
+    //håndter høyreklikk på gallerithumbnailsiden
+    var visible = false;
+    $(document).ready(function(){
+        var visible = false;
+        $(".tommelbildebeholder, div.modal-body.next").bind("contextmenu", customContext);
+        $(document).bind("click", function(event) {
+            visible = false;
+            $("div.custom-menu").hide();
+        });
 
-/**
- * CREATE THE APPLICATION
- *
- * NOTE :
- */
-$mainframe =& JFactory::getApplication('site');
+        function customContext(event){
+            event.preventDefault();
+            if (!visible) {
+                visible = true;
+                $("<div class='custom-menu'><?=$copyrightctx;?></div>")
+                .appendTo("body").css({top: event.pageY + "px", left: event.pageX + "px"});
+            }
+        }
+    });
+</script>
+<script src="../scripts/blueimp_gallery/blueimp-gallery.js"></script>
+<script src="../scripts/blueimp_gallery/jquery.blueimp-gallery.js"></script>
+<script src="../scripts/bootstrap_image_gallery/js/bootstrap-image-gallery.js"></script>
 
-/**
- * INITIALISE THE APPLICATION
- *
- * NOTE :
- */
-// set the language
-$mainframe->initialise();
-
-JPluginHelper::importPlugin('system');
-
-// trigger the onAfterInitialise events
-JDEBUG ? $_PROFILER->mark('afterInitialise') : null;
-$mainframe->triggerEvent('onAfterInitialise');
-
-/**
- * ROUTE THE APPLICATION
- *
- * NOTE :
- */
-$mainframe->route();
-
-// authorization
-$Itemid = JRequest::getInt( 'Itemid');
-$mainframe->authorize($Itemid);
-
-// trigger the onAfterRoute events
-JDEBUG ? $_PROFILER->mark('afterRoute') : null;
-$mainframe->triggerEvent('onAfterRoute');
-
-/**
- * DISPATCH THE APPLICATION
- *
- * NOTE :
- */
-$option = JRequest::getCmd('option');
-$mainframe->dispatch($option);
-
-// trigger the onAfterDispatch events
-JDEBUG ? $_PROFILER->mark('afterDispatch') : null;
-$mainframe->triggerEvent('onAfterDispatch');
-
-/**
- * RENDER  THE APPLICATION
- *
- * NOTE :
- */
-$mainframe->render();
-
-// trigger the onAfterRender events
-JDEBUG ? $_PROFILER->mark('afterRender') : null;
-$mainframe->triggerEvent('onAfterRender');
-
-/**
- * RETURN THE RESPONSE
- */
-echo JResponse::toString($mainframe->getCfg('gzip'));
+<?php
+    include("../templates/footer.php");
+?>
