@@ -28,7 +28,7 @@ include("header.php");
     });
 </script>
 
-<!-- HOME -->
+header("Location: home/");
 
 <div class="container">
     
