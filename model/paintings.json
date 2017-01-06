@@ -8,7 +8,9 @@
 ["5.jpg","Valborg","Oil on linen canvas"],
 ["6.jpg","Fjord Horse",""],
 ["7.jpg","Lucas",""],
-["8.jpg", "Frøya", ""]],
+["8.jpg", "Frøya", ""], 
+["9.jpg", "", ""],
+["10.jpg", "", ""]],
 "dogs":
 [["1.jpg","Tessa","Oil on linen canvas, 45x45 cm"],
 ["2.jpg","Aia","Pastell, A3 format"],
@@ -27,7 +29,9 @@
 ["17.jpg", "", ""],
 ["18.jpg", "Nellie & Hedda", "Charcoal"],
 ["19.jpg", "Puffin Dog", "Oil on linen canvas"],
-["20.jpg", "Puffin Dog & Puffin", "Charcoal"]],
+["20.jpg", "Puffin Dog & Puffin", "Charcoal"],
+["21.jpg", "", ""], 
+["22.jpg", "", ""]],
 "other":
 [["1.jpg","Reindeer Calf",""],
 ["2.jpg","",""],
