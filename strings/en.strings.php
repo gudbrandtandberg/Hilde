@@ -97,4 +97,21 @@ $CV = "
 $contacttext = "If you are interested in buying a painting, commissioning a portrait of your pet, or if you have any other questions, please contact me at:";
 $fb = "My facebook page";
 
+$locationtext = "My art is currently on display at the following locations:";
+$locations = "
+<table style=\"text-align: center; margin: 0 auto; font-size: larger;\">
+<tr>
+<td>
+<a href=\"http://stabekkdyreklinikk.no\">Stabæk Dyreklinikk</a> <br>
+Gamle Drammensvei 40, Stabekk <br>
+phone 66 69 99 01 <br>
+</td>
+<td>
+<a href=\"http://galleriverkstedet.no\">Galleriverkstedet</a> <br>
+Hegdehaugsvn. 12, Oslo <br>
+Opening hours: Wed - Fri 16 -19. Sat-Sun 12 - 16 <br>
+</td>
+</tr>
+</table>";
+
 ?>

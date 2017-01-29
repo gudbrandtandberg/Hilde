@@ -43,7 +43,6 @@
 
 <p style="text-align: center; font-size: x-large; padding-top: 20px; padding-bottom: 20px;">
     <?=$locationtext;?>
-
 </p>
 
 <?=$locations;?>

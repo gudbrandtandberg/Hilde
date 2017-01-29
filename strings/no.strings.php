@@ -4,8 +4,6 @@ $title = "HILDE MORRIS HEST & HUNDEPORTRETTER";
 $home = "HJEM";
 $gallery = "GALLERI";
 $process = "PROSESSEN";
-$utstillinger = "UTSTILLINGER";
-$utstillinger_tekst = "Klikk på plakatene for å se bildene fra utstillingen!";
 $about = "OM MEG";
 $contact = "KONTAKT";
 $welcome = "Velkommen til hildemorris.com";
@@ -24,7 +22,7 @@ $processtitle = "Portrettprosessen";
 $processtext = "<p>Felles mål for alle mine portretter er å levere et personlig portrett som fremhever dyrets eget vesen. Jeg starter gjerne med en samtale med eier. Det hjelper å høre om dyrets dagligliv, morsomme episoder, stort og smått som gir litt innsikt i dyrets karakter og om samspillet med eier og omgivelser.</p> 
 <p>Ved det første møtet ønsker jeg også å forstå eierens forventninger til portrettet. Vil du ha et helt naturalistisk portrett, eller et mer fargerikt, kanskje karikert uttrykk? Bare hode, eller hel figur? Skal portrettet settes i et hjemlig landskap, eller en nøytral bakgrunn? Vi kan se på eksempler og komme frem til et konsept som vi sikter mot. Jeg sier ”sikter”, for det oppstår alltid uforutsette ting i prosessen med å skape et kunstverk.</p>
 <p>Når vi har et klart konsept kan vi bli enige om en kontrakt. For å se en kontraktsmal, følge <a href='images/diverse/contract_english.pdf' target='_blank' style='color: grey;'>denne</a> lenken.</p> 
-<p>For å lage de første skissene må jeg m@te hesten eller hunden. Jeg vil gjerne se ham/henne i samspill med eier, og jeg vil også gjerne ha litt tid alene med dyret hvis det lar seg gjøre. Jeg lager blyantskisser og tar referansefoto til bruk i atelieret etterpå.</p>
+<p>For å lage de første skissene må jeg mote hasten eller hunden. Jeg vil gjerne se ham/henne i samspill med eier, og jeg vil også gjerne ha litt tid alene med dyret hvis det lar seg gjøre. Jeg lager blyantskisser og tar referansefoto til bruk i atelieret etterpå.</p>
 <p>Jeg jobber med det endelige maleriet i atelieret mitt. Du vil få oppdateringer på e-post eller mms underveis, så du kan kommentere og be om endringer etter hvert som maleriet tar form. Det kan også hende at jeg må besøke modellen en gang til under arbeidsperioden.</p>
 <p>Til slutt må maleriet tørke minst to uker før det kan leveres. Hele prosessen, fra første møtet til levering av ferdig verk tar omtrent 2 måneder.</p>";
 
@@ -58,10 +56,30 @@ $CV = "
             <li>2012: \"Treklang\" Kollektivutstilling, Cuben galleri, Oslo</li>
             <li>2015: Åpent Atelier I forbindelse med \"Oslo Open\" kunstfestival</li>
             <li>2015: \"Reinens reise fra vidde til frysedisk\" Separatutstilling på Samisk Hus i Oslo </li>
-            <li>2016: \"Cheval\", Galleriverkstedet H12 </li>
-            <li style=\"text-decoration: underline;\">2016: <a href=\"../images/diverse/Special_Recognition_Award.jpg\">Vant \"Special Recognition Award\" i \"Animals Art Exhibition\", Light, Time & Space Art Gallery</a></li>
         </ul>";
         
 $contacttext = "Hvis du er interresert i å kjøpe et malleri, bestille et portrett av dyret ditt, eller hvis du har noen spørsmål, vennligst kontakt meg i det følgende:";
 $fb = "Min facebook side";
+
+
+$locationtext = "Flere av verkene mine er for øyeblikket stilt ut ved følgende utsalgsteder:";
+
+$locations = "
+<table style=\"text-align: center; margin: 0 auto; font-size: larger;\">
+<tr>
+<td>
+<a href=\"http://stabekkdyreklinikk.no\">Stabæk Dyreklinikk</a> <br>
+Gamle Drammensvei 40, Stabekk <br>
+telefon 66 69 99 01 <br>
+</td>
+<td>
+<a href=\"http://galleriverkstedet.no\">Galleriverkstedet</a> <br>
+Hegdehaugsvn. 12, Oslo <br>
+Åpningstider: ons - fre kl 16 -19. lør-søn kl. 12 - 16 <br>
+</td>
+</tr>
+</table>";
+
+
+
 ?>
