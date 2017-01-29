@@ -10,7 +10,10 @@
     }
     .quitebig{
         font-size: 20px;
-        padding: 60px 15%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 </style>
 
@@ -37,6 +40,14 @@
         </tr>
     </table>
     
+
+<p style="text-align: center; font-size: x-large; padding-top: 20px; padding-bottom: 20px;">
+    <?=$locationtext;?>
+
+</p>
+
+<?=$locations;?>
+
 </div>
 
 <?php

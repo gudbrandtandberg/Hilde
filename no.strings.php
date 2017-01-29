@@ -60,4 +60,23 @@ $CV = "
         
 $contacttext = "Hvis du er interresert i å kjøpe et malleri, bestille et portrett av dyret ditt, eller hvis du har noen spørsmål, vennligst kontakt meg i det følgende:";
 $fb = "Min facebook side";
+
+$locationtext = "Flere av verkene mine er for øyeblikket stilt ut ved følgende utsalgsteder:";
+$locations = "
+<table style=\"text-align: center; margin: 0 auto; font-size: larger;\">
+<tr>
+<td>
+<a href=\"http://stabekkdyreklinikk.no\">Stabæk Dyreklinikk</a> <br>
+Gamle Drammensvei 40, Stabekk <br>
+telefon 66 69 99 01 <br>
+</td>
+<td>
+<a href=\"http://galleriverkstedet.no\">Galleriverkstedet</a> <br>
+Hegdehaugsvn. 12, Oslo <br>
+Åpningstider: ons - fre kl 16 -19. lør-søn kl. 12 - 16 <br>
+</td>
+</tr>
+</table>
+";
+
 ?>
