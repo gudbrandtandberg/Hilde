@@ -4,6 +4,7 @@ $title = "HILDE MORRIS HEST & HUNDEPORTRETTER";
 $home = "HJEM";
 $gallery = "GALLERI";
 $process = "PROSESSEN";
+$utstillinger = "UTSTILLINGER";
 $about = "OM MEG";
 $contact = "KONTAKT";
 $welcome = "Velkommen til hildemorris.com";
@@ -58,28 +59,26 @@ $CV = "
             <li>2015: \"Reinens reise fra vidde til frysedisk\" Separatutstilling på Samisk Hus i Oslo </li>
         </ul>";
         
-$contacttext = "Hvis du er interresert i å kjøpe et malleri, bestille et portrett av dyret ditt, eller hvis du har noen spørsmål, vennligst kontakt meg i det følgende:";
+$contacttext = "Hvis du er interessert i å kjøpe et maleri, bestille et portrett av dyret ditt, eller hvis du har noen spørsmål, vennligst kontakt meg i det følgende:";
 $fb = "Min facebook side";
 
 
-$locationtext = "Flere av verkene mine er for øyeblikket stilt ut ved følgende utsalgsteder:";
+$locationtext = "Flere av mine verk er for øyeblikket stilt ut ved følgende utsalgsteder:";
 
 $locations = "
 <table style=\"text-align: center; margin: 0 auto; font-size: larger;\">
 <tr>
 <td>
-<a href=\"http://stabekkdyreklinikk.no\">Stabæk Dyreklinikk</a> <br>
+<a href=\"http://stabekkdyreklinikk.no\">Stabekk Dyreklinikk</a> <br>
 Gamle Drammensvei 40, Stabekk <br>
 telefon 66 69 99 01 <br>
 </td>
 <td>
-<a href=\"http://galleriverkstedet.no\">Galleriverkstedet</a> <br>
+<a href=\"http://galleriverkstedet.no\">Galleriverkstedet H12</a> <br>
 Hegdehaugsvn. 12, Oslo <br>
 Åpningstider: ons - fre kl 16 -19. lør-søn kl. 12 - 16 <br>
 </td>
 </tr>
 </table>";
-
-
 
 ?>
