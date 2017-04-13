@@ -13,7 +13,7 @@ $dogs = "HUNDER";
 $other = "ANNET";
 $clickimg = "Klikk på bildene for å se dem i stort format";
 $copyrightctx = "Disse bildene er kopibeskyttet. Alle rettigheter forbeholdt Hilde Morris. Uautorisert bruk forbudt.";
-
+$utstillinger_tekst = "Klikk på plakatene for å se bildene fra utstillingen!";
 $maintext = "
 <p>Jeg er billedkunstner og dyrlege.Ved å kombinere de to yrkene gjør jeg nå det jeg både liker og kan aller best: å skape kunstverk med fokus på hunder og hester. Målet mitt er å fange personligheten til akkurat ditt dyr, på en måte som du vil sette pris på. Du skal få et vakkert kunstverk som foreviger din egen hest eller hund.</p>
 <p>Jeg arbeider etter levende modell, for da får jeg bedre grep på dyrets personlighet. For å lære mer om fremgangsmåten, se <a href='process.php'>PROSESSEN</a>.</p>
