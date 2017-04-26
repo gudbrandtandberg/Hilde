@@ -48,7 +48,7 @@ include("../templates/header.php");
         <!--<a href="../images/hovedoya/Baater_i_havn.jpg" data-gallery='#blueimp-gallery-hovedoya'>-->
         <div class="row">
             <div class="col-sm-12">
-                <img src="../images/diverse/Plakat_utstilling_JAKT" style="display: block; width: 950px; margin: 0 auto;">
+                <img src="../images/diverse/Plakat_utstilling_JAKT.jpg" style="display: block; width: 950px; margin: 0 auto;">
             </div>
         </div>
         <!--</a>-->
