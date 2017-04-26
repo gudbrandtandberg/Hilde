@@ -43,6 +43,26 @@ include("../templates/header.php");
     <p><?=$utstillinger_tekst;?></p>
 </div>
 
+<div id="jakt">
+
+        <!--<a href="../images/hovedoya/Baater_i_havn.jpg" data-gallery='#blueimp-gallery-hovedoya'>-->
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="../images/diverse/Plakat_utstilling_JAKT" style="display: block; width: 950px; margin: 0 auto;">
+            </div>
+        </div>
+        <!--</a>-->
+    
+    <?php foreach ($hovedoya_paintings as $painting) {
+        if ($painting != "." && $painting != ".." && $painting != "Baater_i_havn.jpg") {
+        echo "<a href='../images/hovedoya/".$painting."' data-gallery='#blueimp-gallery-hovedoya'></a>";
+        }
+    }
+    ?>
+</div>
+
+<hr>
+
 <div id="hovedoya">
 
         <a href="../images/hovedoya/Baater_i_havn.jpg" data-gallery='#blueimp-gallery-hovedoya'>
