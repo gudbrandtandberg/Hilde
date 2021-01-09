@@ -4,7 +4,7 @@
         extract($_POST);
         $u = $user;
         $p = $password;
-        if ($u === "Hilde" && password_verify($p, '$2y$10$A2XgtWbv0ek3WEMBFri21.tgTy3aTtru5MNcZ8GG4BmNuXzqoIFM.')) {
+        if ($u === "Hilde" && password_verify($p, '$2y$10$W8BiEuV.daNYetHZYlUt2u0i21kVtJutyZOcuIl797iEBaSn2tMf2')) {
             session_start();
             $_SESSION["loggedin"] = "true";
             header("Location: http://hildemorris.com/lastopp.php");
