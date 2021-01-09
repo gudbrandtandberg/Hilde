@@ -12,7 +12,9 @@
 ["9.jpg", "", ""],
 ["10.jpg", "", ""]],
 "dogs":
-[["1.jpg","Tessa","Oil on linen canvas, 45x45 cm"],
+[
+["0.jpg", ""],
+["1.jpg","Tessa","Oil on linen canvas, 45x45 cm"],
 ["2.jpg","Aia","Pastell, A3 format"],
 ["3.jpg","Aia","Oil on linen canvas, 40x50 cm"],
 ["4.jpg","Hedda","Oil on MDF, 20x30 cm"],
@@ -38,9 +40,12 @@
 ["26.jpg", "Nellie & Foxy", ""],
 ["27.jpg", "Nellie", ""],
 ["28.jpg", "Foxy", ""],
-["29.jpg", "Hedda", ""]],
+["29.jpg", "Hedda", ""]
+],
 "other":
-[["1.jpg","Reindeer Calf",""],
+[
+["0.jpg", "Torvøya", ""],
+["1.jpg","Reindeer Calf",""],
 ["2.jpg","",""],
 ["3.jpg","",""],
 ["4.jpg","Walk in the mountains","Oil on linen canvas, 60x80 cm"],
