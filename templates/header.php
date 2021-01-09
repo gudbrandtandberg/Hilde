@@ -26,9 +26,7 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!-- Blueimp CSS -->
-    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <!-- Bootstrap image gallery CSS -->
-    <link rel="stylesheet" href="../scripts/bootstrap_image_gallery/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="../scripts/Gallery-master/css/blueimp-gallery.min.css">
     <!--style.css-->
     <link rel="stylesheet" href="../style.css"></link>
     <script>

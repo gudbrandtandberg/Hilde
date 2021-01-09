@@ -11,42 +11,42 @@
     include("../templates/header.php");
 ?>
 
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
-
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
+<div
+    id="blueimp-gallery"
+    class="blueimp-gallery blueimp-gallery-controls"
+    aria-label="image gallery"
+    aria-modal="true"
+    role="dialog"
+>
+    <div class="slides" aria-live="polite"></div>
     <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
+    <a
+    class="prev"
+    aria-controls="blueimp-gallery"
+    aria-label="previous slide"
+    aria-keyshortcuts="ArrowLeft"
+    ></a>
+    <a
+    class="next"
+    aria-controls="blueimp-gallery"
+    aria-label="next slide"
+    aria-keyshortcuts="ArrowRight"
+    ></a>
+    <a
+    class="close"
+    aria-controls="blueimp-gallery"
+    aria-label="close"
+    aria-keyshortcuts="Escape"
+    ></a>
+    <a
+    class="play-pause"
+    aria-controls="blueimp-gallery"
+    aria-label="play slideshow"
+    aria-keyshortcuts="Space"
+    aria-pressed="false"
+    role="button"
+    ></a>
     <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        <i class="glyphicon glyphicon-chevron-left"></i>
-                        Previous
-                    </button>
-                    <p class="modal-description"></p>
-                    <button type="button" class="btn btn-default next">
-                        Next
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- Dette er gridet -->
@@ -91,9 +91,22 @@
         }
     });
 </script>
-<script src="../scripts/blueimp_gallery/blueimp-gallery.js"></script>
-<script src="../scripts/blueimp_gallery/jquery.blueimp-gallery.js"></script>
-<!--<script src="../scripts/bootstrap_image_gallery/js/bootstrap-image-gallery.js"></script>-->
+
+<script src="../scripts/Gallery-master/js/blueimp-helper.js"></script>
+<script src="../scripts/Gallery-master/js/blueimp-gallery.js"></script>
+<script src="../scripts/Gallery-master/js/blueimp-gallery-indicator.js"></script>
+<script src="../scripts/Gallery-master/js/jquery.blueimp-gallery.js"></script>
+
+<script>
+  document.getElementById('links').onclick = function (event) {
+    event = event || window.event
+    var target = event.target || event.srcElement
+    var link = target.src ? target.parentNode : target
+    var options = { index: link, event: event }
+    var links = this.getElementsByTagName('a')
+    blueimp.Gallery(links, options)
+  }
+</script>
 
 <?php
     include("../templates/footer.php");
